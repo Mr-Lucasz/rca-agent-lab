@@ -1,0 +1,22 @@
+canonical:
+  critical:
+    aliases: [critical, critica, crítico, bloqueador, blocker, p0]
+    weight: 5
+  high:
+    aliases: [high, alta, grave, p1]
+    weight: 3
+  medium:
+    aliases: [medium, media, média, moderada, p2]
+    weight: 2
+  low:
+    aliases: [low, baixa, menor, p3, p4]
+    weight: 1
+  unknown:
+    aliases: [unknown, desconhecida, nao_informada, não informada]
+    weight: 0
+suggestion_rules:
+  critical: [indisponível, indisponivel, perda de dados, security breach, pagamento duplicado]
+  high: [produção, producao, crash, bloqueia, falha total, unauthorized, vazamento]
+  medium: [incorreto, falha parcial, erro, intermitente]
+  low: [visual, alinhamento, texto, cosmético, cosmetico]
+

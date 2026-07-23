@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analisar hipóteses"
+  short_description: "Formula hipóteses causais auditáveis"
+  default_prompt: "Use $analyze-causal-hypotheses para investigar os clusters prioritários."

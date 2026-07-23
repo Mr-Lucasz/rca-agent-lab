@@ -1,0 +1,5 @@
+{
+  "input": "C:\\Users\\C919409\\OneDrive - Anheuser-Busch InBev\\My Documents\\rca-agent-lab\\.worktrees\\rca-agentic-v1\\reports\\run-20260723-bugs-app-corrida-kpi\\bugs_app_corrida_kpi_canonico.csv",
+  "output": "reports\\run-20260723-bugs-app-corrida-kpi-dash-v2",
+  "analysis": "C:\\Users\\C919409\\OneDrive - Anheuser-Busch InBev\\My Documents\\rca-agent-lab\\.worktrees\\rca-agentic-v1\\.rca-work\\bugs-app-corrida-kpi-canonico-f410a4c5ef26\\analysis.json"
+}

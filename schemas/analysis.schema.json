@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "analysis.schema.json",
+  "title": "Canonical RCA analysis",
+  "type": "object",
+  "required": ["metadata", "data_quality", "bugs", "metrics", "clusters", "evidence", "insights", "hypotheses", "actions", "quality_gate"],
+  "properties": {
+    "metadata": {"type": "object"},
+    "data_quality": {"type": "object"},
+    "bugs": {"type": "array", "items": {"$ref": "bug.schema.json"}},
+    "metrics": {"type": "object"},
+    "clusters": {"type": "array"},
+    "evidence": {"type": "array", "items": {"$ref": "evidence.schema.json"}},
+    "insights": {"type": "array"},
+    "hypotheses": {"type": "array"},
+    "actions": {"type": "array"},
+    "quality_gate": {"type": "object"}
+  },
+  "additionalProperties": true
+}
+

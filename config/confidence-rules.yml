@@ -1,0 +1,19 @@
+classification:
+  high:
+    minimum_score: 0.80
+    meaning: "Múltiplos sinais coerentes e específicos."
+  medium:
+    minimum_score: 0.55
+    meaning: "Evidência parcial, mas consistente."
+  low:
+    minimum_score: 0.00
+    meaning: "Sinal exploratório ou dados escassos."
+causal:
+  high:
+    requirements: ["Duas ou mais fontes independentes.", "Relação temporal verificável.", "Mecanismo técnico plausível.", "Evidência contrária tratada."]
+  medium:
+    requirements: ["Evidência textual ou correlação forte.", "Mecanismo plausível.", "Confirmação técnica ainda ausente."]
+  low:
+    requirements: ["Poucos registros ou uma única fonte.", "Dependência relevante de inferência."]
+  rules_only_cap: medium
+

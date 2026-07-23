@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recomendar ações"
+  short_description: "Cria barreiras RCA específicas e mensuráveis"
+  default_prompt: "Use $recommend-rca-actions para propor barreiras verificáveis."

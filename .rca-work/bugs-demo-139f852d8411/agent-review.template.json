@@ -1,0 +1,352 @@
+{
+  "reviewed_by": "replace-with-agent-name",
+  "model": "replace-with-model",
+  "sources_consulted": [
+    {
+      "source": "input_file",
+      "status": "consulted",
+      "details": "C:\\Users\\C919409\\OneDrive - Anheuser-Busch InBev\\My Documents\\rca-agent-lab\\.worktrees\\rca-agentic-v1\\data\\input\\bugs-demo.csv"
+    },
+    {
+      "source": "codebase",
+      "status": "not_requested",
+      "details": ""
+    },
+    {
+      "source": "git",
+      "status": "not_requested",
+      "details": ""
+    },
+    {
+      "source": "observability",
+      "status": "not_requested",
+      "details": ""
+    }
+  ],
+  "triage": [],
+  "evidence": [],
+  "insights": [
+    {
+      "insight_id": "IN-001",
+      "statement": "Pagamentos · falhas de integração reúne 3 bugs, com 2 ocorrências de alta criticidade e score de investigação 20.",
+      "evidence_ids": [
+        "EV-0016",
+        "EV-0021",
+        "EV-0026"
+      ],
+      "limitations": [
+        "É um sinal quantitativo de concentração; sem validação técnica, o agrupamento não confirma o mecanismo causal."
+      ]
+    },
+    {
+      "insight_id": "IN-002",
+      "statement": "Faturamento · quebras visuais reúne 2 bugs, com 2 ocorrências de alta criticidade e score de investigação 20.",
+      "evidence_ids": [
+        "EV-0031",
+        "EV-0036"
+      ],
+      "limitations": [
+        "É um sinal quantitativo de concentração; sem validação técnica, o agrupamento não confirma o mecanismo causal."
+      ]
+    },
+    {
+      "insight_id": "IN-003",
+      "statement": "Autenticação · falhas de segurança reúne 2 bugs, com 2 ocorrências de alta criticidade e score de investigação 16.",
+      "evidence_ids": [
+        "EV-0001",
+        "EV-0006"
+      ],
+      "limitations": [
+        "É um sinal quantitativo de concentração; sem validação técnica, o agrupamento não confirma o mecanismo causal."
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis_id": "HY-001",
+      "cluster_id": "CL-001",
+      "statement": "Mecanismo plausível ligado a integration-contract no cluster Pagamentos · falhas de integração.",
+      "mechanism": "Os bugs do cluster exibem sinais compatíveis com uma falha na categoria integration-contract. A hipótese é que o mesmo mecanismo operacional esteja repetindo o sintoma em cenários parecidos.",
+      "confidence": "medium",
+      "confidence_rationale": "A avaliação usa 6 evidências textuais e 3 bug(s) correlatos. Ainda falta uma prova técnica independente que reproduza o mecanismo de ponta a ponta.",
+      "supporting_evidence_ids": [
+        "EV-0016",
+        "EV-0017",
+        "EV-0018",
+        "EV-0021",
+        "EV-0022",
+        "EV-0023"
+      ],
+      "counter_evidence_ids": [],
+      "missing_information": [
+        "Linha do tempo técnica correlacionando mudança, primeira ocorrência e mitigação.",
+        "Teste ou log que falhe antes da correção e passe depois da barreira aplicada."
+      ],
+      "confirmation_questions": [
+        "Qual mudança de código, configuração ou contrato imediatamente precedeu a primeira ocorrência?",
+        "Qual teste reproduz o mecanismo, e não apenas o sintoma observado pelo usuário?"
+      ],
+      "validation_method": "Reproduzir o cenário em ambiente controlado, correlacionar logs ou traces com a mudança suspeita e executar o teste de regressão antes e depois da correção proposta.",
+      "status": "requires_human_review"
+    },
+    {
+      "hypothesis_id": "HY-002",
+      "cluster_id": "CL-002",
+      "statement": "Mecanismo plausível ligado a implementation no cluster Faturamento · quebras visuais.",
+      "mechanism": "Os bugs do cluster exibem sinais compatíveis com uma falha na categoria implementation. A hipótese é que o mesmo mecanismo operacional esteja repetindo o sintoma em cenários parecidos.",
+      "confidence": "medium",
+      "confidence_rationale": "A avaliação usa 6 evidências textuais e 2 bug(s) correlatos. Ainda falta uma prova técnica independente que reproduza o mecanismo de ponta a ponta.",
+      "supporting_evidence_ids": [
+        "EV-0031",
+        "EV-0032",
+        "EV-0033",
+        "EV-0036",
+        "EV-0037",
+        "EV-0038"
+      ],
+      "counter_evidence_ids": [],
+      "missing_information": [
+        "Linha do tempo técnica correlacionando mudança, primeira ocorrência e mitigação.",
+        "Teste ou log que falhe antes da correção e passe depois da barreira aplicada."
+      ],
+      "confirmation_questions": [
+        "Qual mudança de código, configuração ou contrato imediatamente precedeu a primeira ocorrência?",
+        "Qual teste reproduz o mecanismo, e não apenas o sintoma observado pelo usuário?"
+      ],
+      "validation_method": "Reproduzir o cenário em ambiente controlado, correlacionar logs ou traces com a mudança suspeita e executar o teste de regressão antes e depois da correção proposta.",
+      "status": "requires_human_review"
+    },
+    {
+      "hypothesis_id": "HY-003",
+      "cluster_id": "CL-003",
+      "statement": "Mecanismo plausível ligado a implementation no cluster Autenticação · falhas de segurança.",
+      "mechanism": "Os bugs do cluster exibem sinais compatíveis com uma falha na categoria implementation. A hipótese é que o mesmo mecanismo operacional esteja repetindo o sintoma em cenários parecidos.",
+      "confidence": "medium",
+      "confidence_rationale": "A avaliação usa 6 evidências textuais e 2 bug(s) correlatos. Ainda falta uma prova técnica independente que reproduza o mecanismo de ponta a ponta.",
+      "supporting_evidence_ids": [
+        "EV-0001",
+        "EV-0002",
+        "EV-0003",
+        "EV-0006",
+        "EV-0007",
+        "EV-0008"
+      ],
+      "counter_evidence_ids": [],
+      "missing_information": [
+        "Linha do tempo técnica correlacionando mudança, primeira ocorrência e mitigação.",
+        "Teste ou log que falhe antes da correção e passe depois da barreira aplicada."
+      ],
+      "confirmation_questions": [
+        "Qual mudança de código, configuração ou contrato imediatamente precedeu a primeira ocorrência?",
+        "Qual teste reproduz o mecanismo, e não apenas o sintoma observado pelo usuário?"
+      ],
+      "validation_method": "Reproduzir o cenário em ambiente controlado, correlacionar logs ou traces com a mudança suspeita e executar o teste de regressão antes e depois da correção proposta.",
+      "status": "requires_human_review"
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "AC-001",
+      "hypothesis_id": "HY-001",
+      "cluster_id": "CL-001",
+      "barrier_type": "corrective",
+      "statement": "Corrigir o contrato e versionar payloads incompatíveis. Priorizar o cluster CL-001 e cobrir explicitamente os bugs BUG-201, BUG-202, BUG-203.",
+      "owner_role": "Tech Lead",
+      "horizon": "0–2 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Reproduzir o defeito antes e comprovar sua ausência após a correção.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0016",
+        "EV-0017",
+        "EV-0018"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-002",
+      "hypothesis_id": "HY-001",
+      "cluster_id": "CL-001",
+      "barrier_type": "detective",
+      "statement": "Adicionar contract test produtor-consumidor no CI. Priorizar o cluster CL-001 e cobrir explicitamente os bugs BUG-201, BUG-202, BUG-203.",
+      "owner_role": "QA / SRE",
+      "horizon": "2–4 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Aumentar detecção pré-produção e reduzir MTTD do mecanismo.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0016",
+        "EV-0017",
+        "EV-0018"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-003",
+      "hypothesis_id": "HY-001",
+      "cluster_id": "CL-001",
+      "barrier_type": "preventive",
+      "statement": "Governar evolução de schema com compatibilidade e janela de depreciação. Priorizar o cluster CL-001 e cobrir explicitamente os bugs BUG-201, BUG-202, BUG-203.",
+      "owner_role": "Engineering Manager / Product",
+      "horizon": "1–2 ciclos",
+      "priority": "medium",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Zero recorrência confirmada do mecanismo por dois ciclos.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0016",
+        "EV-0017",
+        "EV-0018"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-004",
+      "hypothesis_id": "HY-002",
+      "cluster_id": "CL-002",
+      "barrier_type": "corrective",
+      "statement": "Isolar a condição de falha e adicionar teste de regressão que falha antes do patch. Priorizar o cluster CL-002 e cobrir explicitamente os bugs BUG-301, BUG-302.",
+      "owner_role": "Tech Lead",
+      "horizon": "0–2 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Reproduzir o defeito antes e comprovar sua ausência após a correção.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0031",
+        "EV-0032",
+        "EV-0033"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-005",
+      "hypothesis_id": "HY-002",
+      "cluster_id": "CL-002",
+      "barrier_type": "detective",
+      "statement": "Executar o teste de regressão no gate de CI do módulo. Priorizar o cluster CL-002 e cobrir explicitamente os bugs BUG-301, BUG-302.",
+      "owner_role": "QA / SRE",
+      "horizon": "2–4 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Aumentar detecção pré-produção e reduzir MTTD do mecanismo.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0031",
+        "EV-0032",
+        "EV-0033"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-006",
+      "hypothesis_id": "HY-002",
+      "cluster_id": "CL-002",
+      "barrier_type": "preventive",
+      "statement": "Adicionar regra estática ou padrão de implementação para bloquear a classe de falha. Priorizar o cluster CL-002 e cobrir explicitamente os bugs BUG-301, BUG-302.",
+      "owner_role": "Engineering Manager / Product",
+      "horizon": "1–2 ciclos",
+      "priority": "medium",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Zero recorrência confirmada do mecanismo por dois ciclos.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0031",
+        "EV-0032",
+        "EV-0033"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-007",
+      "hypothesis_id": "HY-003",
+      "cluster_id": "CL-003",
+      "barrier_type": "corrective",
+      "statement": "Isolar a condição de falha e adicionar teste de regressão que falha antes do patch. Priorizar o cluster CL-003 e cobrir explicitamente os bugs BUG-101, BUG-102.",
+      "owner_role": "Tech Lead",
+      "horizon": "0–2 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Reproduzir o defeito antes e comprovar sua ausência após a correção.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0001",
+        "EV-0002",
+        "EV-0003"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-008",
+      "hypothesis_id": "HY-003",
+      "cluster_id": "CL-003",
+      "barrier_type": "detective",
+      "statement": "Executar o teste de regressão no gate de CI do módulo. Priorizar o cluster CL-003 e cobrir explicitamente os bugs BUG-101, BUG-102.",
+      "owner_role": "QA / SRE",
+      "horizon": "2–4 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Aumentar detecção pré-produção e reduzir MTTD do mecanismo.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0001",
+        "EV-0002",
+        "EV-0003"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-009",
+      "hypothesis_id": "HY-003",
+      "cluster_id": "CL-003",
+      "barrier_type": "preventive",
+      "statement": "Adicionar regra estática ou padrão de implementação para bloquear a classe de falha. Priorizar o cluster CL-003 e cobrir explicitamente os bugs BUG-101, BUG-102.",
+      "owner_role": "Engineering Manager / Product",
+      "horizon": "1–2 ciclos",
+      "priority": "medium",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Zero recorrência confirmada do mecanismo por dois ciclos.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0001",
+        "EV-0002",
+        "EV-0003"
+      ],
+      "status": "requires_human_review"
+    }
+  ],
+  "narrative": {
+    "headline": "Substitua por uma manchete executiva curta, escrita pelo agente.",
+    "executive_summary": "Escreva uma leitura executiva em linguagem natural, técnica e direta, sem repetir os cards do dashboard.",
+    "key_findings": [
+      "Substitua por um achado prioritário baseado em volume, criticidade e evidência.",
+      "Substitua por um segundo achado que explique impacto, recorrência ou risco operacional."
+    ],
+    "systemic_patterns": [
+      "Substitua por um padrão sistêmico que explique por que os bugs continuam reaparecendo.",
+      "Substitua por outro padrão sistêmico sustentado pelas notas de QA e Dev."
+    ],
+    "kpi_reviews": [],
+    "root_cause_reviews": []
+  }
+}

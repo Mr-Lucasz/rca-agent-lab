@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analisar RCA"
+  short_description: "Orquestra RCA completo e auditável"
+  default_prompt: "Use $analyze-rca para analisar este arquivo e gerar o RCA HTML."

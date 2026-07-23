@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gerar dashboard"
+  short_description: "Gera dashboard HTML RCA autocontido"
+  default_prompt: "Use $build-rca-html para gerar o dashboard auditável."

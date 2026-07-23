@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analisar padrões"
+  short_description: "Identifica famílias e clusters rastreáveis"
+  default_prompt: "Use $analyze-defect-patterns para identificar padrões sistêmicos nesta base."

@@ -1,0 +1,29 @@
+canonical:
+  functional:
+    aliases: [functional, funcional, regra de negócio, regra de negocio]
+    keywords: [incorreto, não permite, nao permite, regra, validação, validacao]
+  integration:
+    aliases: [integration, integração, integracao, api]
+    keywords: [api, timeout, webhook, contrato, integração, integracao, serviço, servico]
+  data:
+    aliases: [data, dados, database, banco]
+    keywords: [dados, banco, duplicado, persistência, persistencia, migração, migracao]
+  security:
+    aliases: [security, segurança, seguranca]
+    keywords: [autorização, autorizacao, autenticação, autenticacao, token, permissão, permissao]
+  performance:
+    aliases: [performance, desempenho]
+    keywords: [lento, latência, latencia, memória, memoria, cpu, carga]
+  usability:
+    aliases: [usability, usabilidade, ux]
+    keywords: [confuso, usabilidade, acessibilidade, fluxo]
+  visual:
+    aliases: [visual, ui, layout]
+    keywords: [layout, alinhamento, cor, responsivo, css, visual]
+  reliability:
+    aliases: [reliability, confiabilidade, intermitente]
+    keywords: [intermitente, retry, retentativa, concorrência, concorrencia, race]
+  unknown:
+    aliases: [unknown, desconhecido]
+    keywords: []
+

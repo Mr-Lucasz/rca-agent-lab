@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revisar triagem"
+  short_description: "Revisa severidade, tipo e categoria"
+  default_prompt: "Use $review-bug-triage para revisar a classificação destes bugs."

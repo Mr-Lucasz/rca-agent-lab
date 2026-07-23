@@ -1,0 +1,7 @@
+canonical:
+  production: [production, prod, produção, producao]
+  staging: [staging, stage, homologação, homologacao, hml]
+  qa: [qa, test, teste, testing]
+  development: [development, dev, desenvolvimento, local]
+  unknown: [unknown, desconhecido, não informado, nao informado]
+

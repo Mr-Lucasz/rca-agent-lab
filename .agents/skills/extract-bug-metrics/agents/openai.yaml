@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extrair métricas"
+  short_description: "Calcula KPIs rastreáveis de defeitos"
+  default_prompt: "Use $extract-bug-metrics para calcular os KPIs desta base."

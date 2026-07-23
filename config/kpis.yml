@@ -1,0 +1,8 @@
+kpis:
+  - {id: defect_count, label: "Bugs analisados", formula: "count(distinct source rows)"}
+  - {id: production_escape_rate, label: "Escape para produção", formula: "bugs detectados em produção / bugs com ambiente conhecido"}
+  - {id: reopen_rate, label: "Taxa de reabertura", formula: "bugs reabertos / bugs com indicador conhecido"}
+  - {id: mttd_hours, label: "MTTD", formula: "média(detected_at - created_at), em horas"}
+  - {id: mttr_hours, label: "MTTR", formula: "média(resolved_at - created_at), em horas"}
+  - {id: causal_coverage_rate, label: "Cobertura causal", formula: "bugs com notas QA/Dev / bugs analisados"}
+

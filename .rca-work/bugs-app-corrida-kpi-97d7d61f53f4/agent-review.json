@@ -1,0 +1,2932 @@
+{
+  "reviewed_by": "GitHub Copilot",
+  "model": "GPT-5.3-Codex",
+  "sources_consulted": [
+    {
+      "source": "input_file",
+      "status": "consulted",
+      "details": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv"
+    },
+    {
+      "source": "codebase",
+      "status": "not_requested",
+      "details": ""
+    },
+    {
+      "source": "git",
+      "status": "not_requested",
+      "details": ""
+    },
+    {
+      "source": "observability",
+      "status": "not_requested",
+      "details": ""
+    }
+  ],
+  "triage": [
+    {
+      "bug_id": "UNKNOWN-L2",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L3",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L4",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L5",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L6",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L7",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L8",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L9",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L10",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L11",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L12",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L13",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L14",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L15",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L16",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L17",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L18",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L19",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L20",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L21",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L22",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L23",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L24",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L25",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L26",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L27",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L28",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L29",
+      "suggested_severity": "high",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L30",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L31",
+      "suggested_severity": "high",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L32",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L33",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L34",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L35",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L36",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L37",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L38",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L39",
+      "suggested_severity": "high",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L40",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L41",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L42",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L43",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L44",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L45",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L46",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L47",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L48",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L49",
+      "suggested_severity": "high",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L50",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L51",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L52",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L53",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L54",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L55",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L56",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L57",
+      "suggested_severity": "high",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L58",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L59",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L60",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L61",
+      "suggested_severity": "high",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L62",
+      "suggested_severity": "high",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L63",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L64",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L65",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L66",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L67",
+      "suggested_severity": "medium",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "high",
+      "rationale": "As regras encontraram 5 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L68",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "process",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L69",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L70",
+      "suggested_severity": "unknown",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 2 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    },
+    {
+      "bug_id": "UNKNOWN-L71",
+      "suggested_severity": "high",
+      "suggested_bug_type": "visual",
+      "suggested_root_cause_category": "implementation",
+      "confidence": "medium",
+      "rationale": "As regras encontraram 3 sinais textuais relevantes; a classificação reportada foi avaliada como conflicting. Requer revisão humana.",
+      "review_status": "conflicting"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EV-0001",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=2:actual_behavior",
+      "bug_id": "UNKNOWN-L2",
+      "excerpt": "O Cypress está validando apenas se o container `<div id='history'>` existe, ignorando se os cards foram renderizados.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0002",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=2:description",
+      "bug_id": "UNKNOWN-L2",
+      "excerpt": "Pipeline de regressão está passando, mas a tela de histórico fica em branco ao carregar treinos antigos.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0003",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=2:title",
+      "bug_id": "UNKNOWN-L2",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [1]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0004",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=3:actual_behavior",
+      "bug_id": "UNKNOWN-L3",
+      "excerpt": "O Cypress está validando apenas se o container `<div id='history'>` existe, ignorando se os cards foram renderizados.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0005",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=3:description",
+      "bug_id": "UNKNOWN-L3",
+      "excerpt": "Pipeline de regressão está passando, mas a tela de histórico fica em branco ao carregar treinos antigos.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0006",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=3:title",
+      "bug_id": "UNKNOWN-L3",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [3]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0007",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=4:actual_behavior",
+      "bug_id": "UNKNOWN-L4",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0008",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=4:description",
+      "bug_id": "UNKNOWN-L4",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0009",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=4:title",
+      "bug_id": "UNKNOWN-L4",
+      "excerpt": "Sincronização com Strava falha silenciosamente [4]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0010",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=5:actual_behavior",
+      "bug_id": "UNKNOWN-L5",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0011",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=5:description",
+      "bug_id": "UNKNOWN-L5",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0012",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=5:title",
+      "bug_id": "UNKNOWN-L5",
+      "excerpt": "Sincronização com Strava falha silenciosamente [5]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0013",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=6:actual_behavior",
+      "bug_id": "UNKNOWN-L6",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0014",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=6:description",
+      "bug_id": "UNKNOWN-L6",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0015",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=6:title",
+      "bug_id": "UNKNOWN-L6",
+      "excerpt": "Histórico não carrega dados do último treino longo [7]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0016",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=7:actual_behavior",
+      "bug_id": "UNKNOWN-L7",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0017",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=7:description",
+      "bug_id": "UNKNOWN-L7",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0018",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=7:title",
+      "bug_id": "UNKNOWN-L7",
+      "excerpt": "Distância total diverge em 300m comparado ao relógio [8]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0019",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=8:actual_behavior",
+      "bug_id": "UNKNOWN-L8",
+      "excerpt": "O Cypress está validando apenas se o container `<div id='history'>` existe, ignorando se os cards foram renderizados.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0020",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=8:description",
+      "bug_id": "UNKNOWN-L8",
+      "excerpt": "Pipeline de regressão está passando, mas a tela de histórico fica em branco ao carregar treinos antigos.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0021",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=8:title",
+      "bug_id": "UNKNOWN-L8",
+      "excerpt": "Distância total diverge em 300m comparado ao relógio [12]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0022",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=9:actual_behavior",
+      "bug_id": "UNKNOWN-L9",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0023",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=9:description",
+      "bug_id": "UNKNOWN-L9",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0024",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=9:title",
+      "bug_id": "UNKNOWN-L9",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [13]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0025",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=10:actual_behavior",
+      "bug_id": "UNKNOWN-L10",
+      "excerpt": "O Cypress está validando apenas se o container `<div id='history'>` existe, ignorando se os cards foram renderizados.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0026",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=10:description",
+      "bug_id": "UNKNOWN-L10",
+      "excerpt": "Pipeline de regressão está passando, mas a tela de histórico fica em branco ao carregar treinos antigos.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0027",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=10:title",
+      "bug_id": "UNKNOWN-L10",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [20]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0028",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=11:actual_behavior",
+      "bug_id": "UNKNOWN-L11",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0029",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=11:description",
+      "bug_id": "UNKNOWN-L11",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0030",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=11:title",
+      "bug_id": "UNKNOWN-L11",
+      "excerpt": "Histórico não carrega dados do último treino longo [21]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0031",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=12:actual_behavior",
+      "bug_id": "UNKNOWN-L12",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0032",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=12:description",
+      "bug_id": "UNKNOWN-L12",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0033",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=12:title",
+      "bug_id": "UNKNOWN-L12",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [23]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0034",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=13:actual_behavior",
+      "bug_id": "UNKNOWN-L13",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0035",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=13:description",
+      "bug_id": "UNKNOWN-L13",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0036",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=13:title",
+      "bug_id": "UNKNOWN-L13",
+      "excerpt": "Playwright não encontra botão 'Iniciar Corrida' após animação inicial [26]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0037",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=14:actual_behavior",
+      "bug_id": "UNKNOWN-L14",
+      "excerpt": "O Cypress está validando apenas se o container `<div id='history'>` existe, ignorando se os cards foram renderizados.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0038",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=14:description",
+      "bug_id": "UNKNOWN-L14",
+      "excerpt": "Pipeline de regressão está passando, mas a tela de histórico fica em branco ao carregar treinos antigos.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0039",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=14:title",
+      "bug_id": "UNKNOWN-L14",
+      "excerpt": "Cálculo de Negative Split apresenta falso positivo em treinos longos [30]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0040",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=15:actual_behavior",
+      "bug_id": "UNKNOWN-L15",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0041",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=15:description",
+      "bug_id": "UNKNOWN-L15",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0042",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=15:title",
+      "bug_id": "UNKNOWN-L15",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [31]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0043",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=16:actual_behavior",
+      "bug_id": "UNKNOWN-L16",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0044",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=16:description",
+      "bug_id": "UNKNOWN-L16",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0045",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=16:title",
+      "bug_id": "UNKNOWN-L16",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [33]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0046",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=17:actual_behavior",
+      "bug_id": "UNKNOWN-L17",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0047",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=17:description",
+      "bug_id": "UNKNOWN-L17",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0048",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=17:title",
+      "bug_id": "UNKNOWN-L17",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [38]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0049",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=18:actual_behavior",
+      "bug_id": "UNKNOWN-L18",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0050",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=18:description",
+      "bug_id": "UNKNOWN-L18",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0051",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=18:title",
+      "bug_id": "UNKNOWN-L18",
+      "excerpt": "Distância total diverge em 300m comparado ao relógio [40]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0052",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=19:actual_behavior",
+      "bug_id": "UNKNOWN-L19",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0053",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=19:description",
+      "bug_id": "UNKNOWN-L19",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0054",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=19:title",
+      "bug_id": "UNKNOWN-L19",
+      "excerpt": "Cálculo de Negative Split apresenta falso positivo em treinos longos [41]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0055",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=20:actual_behavior",
+      "bug_id": "UNKNOWN-L20",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0056",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=20:description",
+      "bug_id": "UNKNOWN-L20",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0057",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=20:title",
+      "bug_id": "UNKNOWN-L20",
+      "excerpt": "Sincronização com Strava falha silenciosamente [44]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0058",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=21:actual_behavior",
+      "bug_id": "UNKNOWN-L21",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0059",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=21:description",
+      "bug_id": "UNKNOWN-L21",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0060",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=21:title",
+      "bug_id": "UNKNOWN-L21",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [46]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0061",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=22:actual_behavior",
+      "bug_id": "UNKNOWN-L22",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0062",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=22:description",
+      "bug_id": "UNKNOWN-L22",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0063",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=22:title",
+      "bug_id": "UNKNOWN-L22",
+      "excerpt": "Sincronização com Strava falha silenciosamente [57]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0064",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=23:actual_behavior",
+      "bug_id": "UNKNOWN-L23",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0065",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=23:description",
+      "bug_id": "UNKNOWN-L23",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0066",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=23:title",
+      "bug_id": "UNKNOWN-L23",
+      "excerpt": "Playwright não encontra botão 'Iniciar Corrida' após animação inicial [62]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0067",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=24:actual_behavior",
+      "bug_id": "UNKNOWN-L24",
+      "excerpt": "O Cypress está validando apenas se o container `<div id='history'>` existe, ignorando se os cards foram renderizados.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0068",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=24:description",
+      "bug_id": "UNKNOWN-L24",
+      "excerpt": "Pipeline de regressão está passando, mas a tela de histórico fica em branco ao carregar treinos antigos.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0069",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=24:title",
+      "bug_id": "UNKNOWN-L24",
+      "excerpt": "Erro de hidratação na tela de Análise de Pace [64]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0070",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=25:actual_behavior",
+      "bug_id": "UNKNOWN-L25",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0071",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=25:description",
+      "bug_id": "UNKNOWN-L25",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0072",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=25:title",
+      "bug_id": "UNKNOWN-L25",
+      "excerpt": "Pace instantâneo oscila para 1:30/km em áreas de sombra de GPS [66]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0073",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=26:actual_behavior",
+      "bug_id": "UNKNOWN-L26",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0074",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=26:description",
+      "bug_id": "UNKNOWN-L26",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0075",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=26:title",
+      "bug_id": "UNKNOWN-L26",
+      "excerpt": "Webhook do Strava não atualiza status do treino no cluster [68]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0076",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=27:actual_behavior",
+      "bug_id": "UNKNOWN-L27",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0077",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=27:description",
+      "bug_id": "UNKNOWN-L27",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0078",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=27:title",
+      "bug_id": "UNKNOWN-L27",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [69]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0079",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=28:actual_behavior",
+      "bug_id": "UNKNOWN-L28",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0080",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=28:description",
+      "bug_id": "UNKNOWN-L28",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0081",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=28:title",
+      "bug_id": "UNKNOWN-L28",
+      "excerpt": "Pace instantâneo oscila para 1:30/km em áreas de sombra de GPS [70]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0082",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=29:actual_behavior",
+      "bug_id": "UNKNOWN-L29",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0083",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=29:description",
+      "bug_id": "UNKNOWN-L29",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0084",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=29:title",
+      "bug_id": "UNKNOWN-L29",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [10]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0085",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=30:actual_behavior",
+      "bug_id": "UNKNOWN-L30",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0086",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=30:description",
+      "bug_id": "UNKNOWN-L30",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0087",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=30:title",
+      "bug_id": "UNKNOWN-L30",
+      "excerpt": "Histórico não carrega dados do último treino longo [11]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0088",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=31:actual_behavior",
+      "bug_id": "UNKNOWN-L31",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0089",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=31:description",
+      "bug_id": "UNKNOWN-L31",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0090",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=31:title",
+      "bug_id": "UNKNOWN-L31",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [14]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0091",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=32:actual_behavior",
+      "bug_id": "UNKNOWN-L32",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0092",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=32:description",
+      "bug_id": "UNKNOWN-L32",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0093",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=32:title",
+      "bug_id": "UNKNOWN-L32",
+      "excerpt": "Histórico não carrega dados do último treino longo [16]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0094",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=33:actual_behavior",
+      "bug_id": "UNKNOWN-L33",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0095",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=33:description",
+      "bug_id": "UNKNOWN-L33",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0096",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=33:title",
+      "bug_id": "UNKNOWN-L33",
+      "excerpt": "Sincronização com Strava falha silenciosamente [17]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0097",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=34:actual_behavior",
+      "bug_id": "UNKNOWN-L34",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0098",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=34:description",
+      "bug_id": "UNKNOWN-L34",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0099",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=34:title",
+      "bug_id": "UNKNOWN-L34",
+      "excerpt": "Distância total diverge em 300m comparado ao relógio [27]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0100",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=35:actual_behavior",
+      "bug_id": "UNKNOWN-L35",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0101",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=35:description",
+      "bug_id": "UNKNOWN-L35",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0102",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=35:title",
+      "bug_id": "UNKNOWN-L35",
+      "excerpt": "Distância total diverge em 300m comparado ao relógio [29]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0103",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=36:actual_behavior",
+      "bug_id": "UNKNOWN-L36",
+      "excerpt": "O Cypress está validando apenas se o container `<div id='history'>` existe, ignorando se os cards foram renderizados.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0104",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=36:description",
+      "bug_id": "UNKNOWN-L36",
+      "excerpt": "Pipeline de regressão está passando, mas a tela de histórico fica em branco ao carregar treinos antigos.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0105",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=36:title",
+      "bug_id": "UNKNOWN-L36",
+      "excerpt": "Sincronização com Strava falha silenciosamente [35]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0106",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=37:actual_behavior",
+      "bug_id": "UNKNOWN-L37",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0107",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=37:description",
+      "bug_id": "UNKNOWN-L37",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0108",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=37:title",
+      "bug_id": "UNKNOWN-L37",
+      "excerpt": "Playwright não encontra botão 'Iniciar Corrida' após animação inicial [39]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0109",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=38:actual_behavior",
+      "bug_id": "UNKNOWN-L38",
+      "excerpt": "O Cypress está validando apenas se o container `<div id='history'>` existe, ignorando se os cards foram renderizados.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0110",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=38:description",
+      "bug_id": "UNKNOWN-L38",
+      "excerpt": "Pipeline de regressão está passando, mas a tela de histórico fica em branco ao carregar treinos antigos.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0111",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=38:title",
+      "bug_id": "UNKNOWN-L38",
+      "excerpt": "Webhook do Strava não atualiza status do treino no cluster [45]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0112",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=39:actual_behavior",
+      "bug_id": "UNKNOWN-L39",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0113",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=39:description",
+      "bug_id": "UNKNOWN-L39",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0114",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=39:title",
+      "bug_id": "UNKNOWN-L39",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [47]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0115",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=40:actual_behavior",
+      "bug_id": "UNKNOWN-L40",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0116",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=40:description",
+      "bug_id": "UNKNOWN-L40",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0117",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=40:title",
+      "bug_id": "UNKNOWN-L40",
+      "excerpt": "Pace instantâneo oscila para 1:30/km em áreas de sombra de GPS [48]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0118",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=41:actual_behavior",
+      "bug_id": "UNKNOWN-L41",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0119",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=41:description",
+      "bug_id": "UNKNOWN-L41",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0120",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=41:title",
+      "bug_id": "UNKNOWN-L41",
+      "excerpt": "Erro de hidratação na tela de Análise de Pace [50]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0121",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=42:actual_behavior",
+      "bug_id": "UNKNOWN-L42",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0122",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=42:description",
+      "bug_id": "UNKNOWN-L42",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0123",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=42:title",
+      "bug_id": "UNKNOWN-L42",
+      "excerpt": "Histórico não carrega dados do último treino longo [51]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0124",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=43:actual_behavior",
+      "bug_id": "UNKNOWN-L43",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0125",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=43:description",
+      "bug_id": "UNKNOWN-L43",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0126",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=43:title",
+      "bug_id": "UNKNOWN-L43",
+      "excerpt": "Sincronização com Strava falha silenciosamente [52]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0127",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=44:actual_behavior",
+      "bug_id": "UNKNOWN-L44",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0128",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=44:description",
+      "bug_id": "UNKNOWN-L44",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0129",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=44:title",
+      "bug_id": "UNKNOWN-L44",
+      "excerpt": "Distância total diverge em 300m comparado ao relógio [53]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0130",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=45:actual_behavior",
+      "bug_id": "UNKNOWN-L45",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0131",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=45:description",
+      "bug_id": "UNKNOWN-L45",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0132",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=45:title",
+      "bug_id": "UNKNOWN-L45",
+      "excerpt": "Playwright não encontra botão 'Iniciar Corrida' após animação inicial [54]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0133",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=46:actual_behavior",
+      "bug_id": "UNKNOWN-L46",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0134",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=46:description",
+      "bug_id": "UNKNOWN-L46",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0135",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=46:title",
+      "bug_id": "UNKNOWN-L46",
+      "excerpt": "Cálculo de Negative Split apresenta falso positivo em treinos longos [55]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0136",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=47:actual_behavior",
+      "bug_id": "UNKNOWN-L47",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0137",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=47:description",
+      "bug_id": "UNKNOWN-L47",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0138",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=47:title",
+      "bug_id": "UNKNOWN-L47",
+      "excerpt": "Playwright não encontra botão 'Iniciar Corrida' após animação inicial [56]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0139",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=48:actual_behavior",
+      "bug_id": "UNKNOWN-L48",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0140",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=48:description",
+      "bug_id": "UNKNOWN-L48",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0141",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=48:title",
+      "bug_id": "UNKNOWN-L48",
+      "excerpt": "Sincronização com Strava falha silenciosamente [58]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0142",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=49:actual_behavior",
+      "bug_id": "UNKNOWN-L49",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0143",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=49:description",
+      "bug_id": "UNKNOWN-L49",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0144",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=49:title",
+      "bug_id": "UNKNOWN-L49",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [63]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0145",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=50:actual_behavior",
+      "bug_id": "UNKNOWN-L50",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0146",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=50:description",
+      "bug_id": "UNKNOWN-L50",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0147",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=50:title",
+      "bug_id": "UNKNOWN-L50",
+      "excerpt": "Pace instantâneo oscila para 1:30/km em áreas de sombra de GPS [67]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0148",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=51:actual_behavior",
+      "bug_id": "UNKNOWN-L51",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0149",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=51:description",
+      "bug_id": "UNKNOWN-L51",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0150",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=51:title",
+      "bug_id": "UNKNOWN-L51",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [2]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0151",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=52:actual_behavior",
+      "bug_id": "UNKNOWN-L52",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0152",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=52:description",
+      "bug_id": "UNKNOWN-L52",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0153",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=52:title",
+      "bug_id": "UNKNOWN-L52",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [6]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0154",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=53:actual_behavior",
+      "bug_id": "UNKNOWN-L53",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0155",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=53:description",
+      "bug_id": "UNKNOWN-L53",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0156",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=53:title",
+      "bug_id": "UNKNOWN-L53",
+      "excerpt": "Webhook do Strava não atualiza status do treino no cluster [9]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0157",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=54:actual_behavior",
+      "bug_id": "UNKNOWN-L54",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0158",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=54:description",
+      "bug_id": "UNKNOWN-L54",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0159",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=54:title",
+      "bug_id": "UNKNOWN-L54",
+      "excerpt": "Pace instantâneo oscila para 1:30/km em áreas de sombra de GPS [15]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0160",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=55:actual_behavior",
+      "bug_id": "UNKNOWN-L55",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0161",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=55:description",
+      "bug_id": "UNKNOWN-L55",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0162",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=55:title",
+      "bug_id": "UNKNOWN-L55",
+      "excerpt": "Cálculo de Negative Split apresenta falso positivo em treinos longos [18]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0163",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=56:actual_behavior",
+      "bug_id": "UNKNOWN-L56",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0164",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=56:description",
+      "bug_id": "UNKNOWN-L56",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0165",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=56:title",
+      "bug_id": "UNKNOWN-L56",
+      "excerpt": "Sincronização com Strava falha silenciosamente [19]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0166",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=57:actual_behavior",
+      "bug_id": "UNKNOWN-L57",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0167",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=57:description",
+      "bug_id": "UNKNOWN-L57",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0168",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=57:title",
+      "bug_id": "UNKNOWN-L57",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [22]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0169",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=58:actual_behavior",
+      "bug_id": "UNKNOWN-L58",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0170",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=58:description",
+      "bug_id": "UNKNOWN-L58",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0171",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=58:title",
+      "bug_id": "UNKNOWN-L58",
+      "excerpt": "Cálculo de Negative Split apresenta falso positivo em treinos longos [24]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0172",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=59:actual_behavior",
+      "bug_id": "UNKNOWN-L59",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0173",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=59:description",
+      "bug_id": "UNKNOWN-L59",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0174",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=59:title",
+      "bug_id": "UNKNOWN-L59",
+      "excerpt": "Testes de carga com k6 apontam gargalo ao salvar rota de GPS [25]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0175",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=60:actual_behavior",
+      "bug_id": "UNKNOWN-L60",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0176",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=60:description",
+      "bug_id": "UNKNOWN-L60",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0177",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=60:title",
+      "bug_id": "UNKNOWN-L60",
+      "excerpt": "Playwright não encontra botão 'Iniciar Corrida' após animação inicial [28]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0178",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=61:actual_behavior",
+      "bug_id": "UNKNOWN-L61",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0179",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=61:description",
+      "bug_id": "UNKNOWN-L61",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0180",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=61:title",
+      "bug_id": "UNKNOWN-L61",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [32]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0181",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=62:actual_behavior",
+      "bug_id": "UNKNOWN-L62",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0182",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=62:description",
+      "bug_id": "UNKNOWN-L62",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0183",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=62:title",
+      "bug_id": "UNKNOWN-L62",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [34]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0184",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=63:actual_behavior",
+      "bug_id": "UNKNOWN-L63",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0185",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=63:description",
+      "bug_id": "UNKNOWN-L63",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0186",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=63:title",
+      "bug_id": "UNKNOWN-L63",
+      "excerpt": "Distância total diverge em 300m comparado ao relógio [36]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0187",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=64:actual_behavior",
+      "bug_id": "UNKNOWN-L64",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0188",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=64:description",
+      "bug_id": "UNKNOWN-L64",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0189",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=64:title",
+      "bug_id": "UNKNOWN-L64",
+      "excerpt": "Playwright não encontra botão 'Iniciar Corrida' após animação inicial [37]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0190",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=65:actual_behavior",
+      "bug_id": "UNKNOWN-L65",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0191",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=65:description",
+      "bug_id": "UNKNOWN-L65",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0192",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=65:title",
+      "bug_id": "UNKNOWN-L65",
+      "excerpt": "Distância total diverge em 300m comparado ao relógio [42]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0193",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=66:actual_behavior",
+      "bug_id": "UNKNOWN-L66",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0194",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=66:description",
+      "bug_id": "UNKNOWN-L66",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0195",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=66:title",
+      "bug_id": "UNKNOWN-L66",
+      "excerpt": "Distância total diverge em 300m comparado ao relógio [43]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0196",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=67:actual_behavior",
+      "bug_id": "UNKNOWN-L67",
+      "excerpt": "Pequena quebra de layout ao rotacionar a tela.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0197",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=67:description",
+      "bug_id": "UNKNOWN-L67",
+      "excerpt": "Problema geral de interface/interação na aba Cálculo de Pace e Distância durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0198",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=67:title",
+      "bug_id": "UNKNOWN-L67",
+      "excerpt": "Sincronização com Strava falha silenciosamente [49]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0199",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=68:actual_behavior",
+      "bug_id": "UNKNOWN-L68",
+      "excerpt": "O sistema operacional mata o processo de background e o GPS desenha uma reta entre o ponto de bloqueio e desbloqueio.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0200",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=68:description",
+      "bug_id": "UNKNOWN-L68",
+      "excerpt": "Linha reta no mapa de GPS quando o celular é bloqueado durante a corrida.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0201",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=68:title",
+      "bug_id": "UNKNOWN-L68",
+      "excerpt": "Histórico não carrega dados do último treino longo [59]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0202",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=69:actual_behavior",
+      "bug_id": "UNKNOWN-L69",
+      "excerpt": "O Cypress está validando apenas se o container `<div id='history'>` existe, ignorando se os cards foram renderizados.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0203",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=69:description",
+      "bug_id": "UNKNOWN-L69",
+      "excerpt": "Pipeline de regressão está passando, mas a tela de histórico fica em branco ao carregar treinos antigos.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0204",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=69:title",
+      "bug_id": "UNKNOWN-L69",
+      "excerpt": "Pace instantâneo oscila para 1:30/km em áreas de sombra de GPS [60]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0205",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=70:actual_behavior",
+      "bug_id": "UNKNOWN-L70",
+      "excerpt": "Arredondamento de segundos no frontend gera falso positivo de negative split.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0206",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=70:description",
+      "bug_id": "UNKNOWN-L70",
+      "excerpt": "A flag de 'Negative Split alcançado' está acendendo mesmo quando a segunda metade da corrida foi 2 segundos mais lenta.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0207",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=70:title",
+      "bug_id": "UNKNOWN-L70",
+      "excerpt": "Pace instantâneo oscila para 1:30/km em áreas de sombra de GPS [61]",
+      "reliability": "low",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0208",
+      "source_type": "actual_behavior",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=71:actual_behavior",
+      "bug_id": "UNKNOWN-L71",
+      "excerpt": "Loading infinito na tela de resumo e o treino fica preso localmente.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0209",
+      "source_type": "description",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=71:description",
+      "bug_id": "UNKNOWN-L71",
+      "excerpt": "Ao finalizar a corrida, o envio automático do `.fit` para o Strava falha e não notifica o usuário.",
+      "reliability": "high",
+      "observed_at": null
+    },
+    {
+      "evidence_id": "EV-0210",
+      "source_type": "title",
+      "source_ref": "C:\\Users\\C919409\\Downloads\\bugs_app_corrida_kpi.csv#row=71:title",
+      "bug_id": "UNKNOWN-L71",
+      "excerpt": "App crasha ao finalizar treino intervalado de pista [65]",
+      "reliability": "low",
+      "observed_at": null
+    }
+  ],
+  "insights": [
+    {
+      "insight_id": "IN-001",
+      "statement": "Rastreamento Gps · quebras visuais reúne 18 bugs, com 18 ocorrências de alta criticidade e score de investigação 126.",
+      "evidence_ids": [
+        "EV-0007",
+        "EV-0016",
+        "EV-0028",
+        "EV-0040",
+        "EV-0055"
+      ],
+      "limitations": [
+        "É um sinal quantitativo de concentração; sem validação técnica, o agrupamento não confirma o mecanismo causal."
+      ]
+    },
+    {
+      "insight_id": "IN-002",
+      "statement": "Integração Strava · quebras visuais reúne 18 bugs, com 8 ocorrências de alta criticidade e score de investigação 76.",
+      "evidence_ids": [
+        "EV-0010",
+        "EV-0013",
+        "EV-0022",
+        "EV-0034",
+        "EV-0052"
+      ],
+      "limitations": [
+        "É um sinal quantitativo de concentração; sem validação técnica, o agrupamento não confirma o mecanismo causal."
+      ]
+    },
+    {
+      "insight_id": "IN-003",
+      "statement": "Análise De Negative Split · quebras visuais reúne 14 bugs, com 0 ocorrências de alta criticidade e score de investigação 28.",
+      "evidence_ids": [
+        "EV-0043",
+        "EV-0082",
+        "EV-0085",
+        "EV-0094",
+        "EV-0100"
+      ],
+      "limitations": [
+        "É um sinal quantitativo de concentração; sem validação técnica, o agrupamento não confirma o mecanismo causal."
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis_id": "HY-001",
+      "cluster_id": "CL-001",
+      "statement": "Mecanismo plausível ligado a process no cluster Rastreamento Gps · quebras visuais.",
+      "mechanism": "Os bugs do cluster exibem sinais compatíveis com uma falha na categoria process. A hipótese é que o mesmo mecanismo operacional esteja repetindo o sintoma em cenários parecidos.",
+      "confidence": "medium",
+      "confidence_rationale": "A avaliação usa 6 evidências textuais e 18 bug(s) correlatos. Ainda falta uma prova técnica independente que reproduza o mecanismo de ponta a ponta.",
+      "supporting_evidence_ids": [
+        "EV-0007",
+        "EV-0016",
+        "EV-0028",
+        "EV-0040",
+        "EV-0055",
+        "EV-0058"
+      ],
+      "counter_evidence_ids": [],
+      "missing_information": [
+        "Linha do tempo técnica correlacionando mudança, primeira ocorrência e mitigação.",
+        "Teste ou log que falhe antes da correção e passe depois da barreira aplicada."
+      ],
+      "confirmation_questions": [
+        "Qual mudança de código, configuração ou contrato imediatamente precedeu a primeira ocorrência?",
+        "Qual teste reproduz o mecanismo, e não apenas o sintoma observado pelo usuário?"
+      ],
+      "validation_method": "Reproduzir o cenário em ambiente controlado, correlacionar logs ou traces com a mudança suspeita e executar o teste de regressão antes e depois da correção proposta.",
+      "status": "requires_human_review"
+    },
+    {
+      "hypothesis_id": "HY-002",
+      "cluster_id": "CL-002",
+      "statement": "Mecanismo plausível ligado a implementation no cluster Integração Strava · quebras visuais.",
+      "mechanism": "Os bugs do cluster exibem sinais compatíveis com uma falha na categoria implementation. A hipótese é que o mesmo mecanismo operacional esteja repetindo o sintoma em cenários parecidos.",
+      "confidence": "medium",
+      "confidence_rationale": "A avaliação usa 6 evidências textuais e 18 bug(s) correlatos. Ainda falta uma prova técnica independente que reproduza o mecanismo de ponta a ponta.",
+      "supporting_evidence_ids": [
+        "EV-0010",
+        "EV-0013",
+        "EV-0022",
+        "EV-0034",
+        "EV-0052",
+        "EV-0064"
+      ],
+      "counter_evidence_ids": [],
+      "missing_information": [
+        "Linha do tempo técnica correlacionando mudança, primeira ocorrência e mitigação.",
+        "Teste ou log que falhe antes da correção e passe depois da barreira aplicada."
+      ],
+      "confirmation_questions": [
+        "Qual mudança de código, configuração ou contrato imediatamente precedeu a primeira ocorrência?",
+        "Qual teste reproduz o mecanismo, e não apenas o sintoma observado pelo usuário?"
+      ],
+      "validation_method": "Reproduzir o cenário em ambiente controlado, correlacionar logs ou traces com a mudança suspeita e executar o teste de regressão antes e depois da correção proposta.",
+      "status": "requires_human_review"
+    },
+    {
+      "hypothesis_id": "HY-003",
+      "cluster_id": "CL-003",
+      "statement": "Mecanismo plausível ligado a implementation no cluster Análise De Negative Split · quebras visuais.",
+      "mechanism": "Os bugs do cluster exibem sinais compatíveis com uma falha na categoria implementation. A hipótese é que o mesmo mecanismo operacional esteja repetindo o sintoma em cenários parecidos.",
+      "confidence": "medium",
+      "confidence_rationale": "A avaliação usa 6 evidências textuais e 14 bug(s) correlatos. Ainda falta uma prova técnica independente que reproduza o mecanismo de ponta a ponta.",
+      "supporting_evidence_ids": [
+        "EV-0043",
+        "EV-0082",
+        "EV-0085",
+        "EV-0094",
+        "EV-0100",
+        "EV-0115"
+      ],
+      "counter_evidence_ids": [],
+      "missing_information": [
+        "Linha do tempo técnica correlacionando mudança, primeira ocorrência e mitigação.",
+        "Teste ou log que falhe antes da correção e passe depois da barreira aplicada."
+      ],
+      "confirmation_questions": [
+        "Qual mudança de código, configuração ou contrato imediatamente precedeu a primeira ocorrência?",
+        "Qual teste reproduz o mecanismo, e não apenas o sintoma observado pelo usuário?"
+      ],
+      "validation_method": "Reproduzir o cenário em ambiente controlado, correlacionar logs ou traces com a mudança suspeita e executar o teste de regressão antes e depois da correção proposta.",
+      "status": "requires_human_review"
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "AC-001",
+      "hypothesis_id": "HY-001",
+      "cluster_id": "CL-001",
+      "barrier_type": "corrective",
+      "statement": "Coletar a evidência faltante antes de alterar o mecanismo. Priorizar o cluster CL-001 e cobrir explicitamente os bugs UNKNOWN-L4, UNKNOWN-L7, UNKNOWN-L11, UNKNOWN-L15, UNKNOWN-L20, UNKNOWN-L21, UNKNOWN-L22, UNKNOWN-L26, UNKNOWN-L34, UNKNOWN-L41, UNKNOWN-L42, UNKNOWN-L43, UNKNOWN-L45, UNKNOWN-L46, UNKNOWN-L48, UNKNOWN-L63, UNKNOWN-L64, UNKNOWN-L68.",
+      "owner_role": "Tech Lead",
+      "horizon": "0–2 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Reproduzir o defeito antes e comprovar sua ausência após a correção.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0007",
+        "EV-0016",
+        "EV-0028"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-002",
+      "hypothesis_id": "HY-001",
+      "cluster_id": "CL-001",
+      "barrier_type": "detective",
+      "statement": "Criar captura temporária e limitada para reproduzir o evento. Priorizar o cluster CL-001 e cobrir explicitamente os bugs UNKNOWN-L4, UNKNOWN-L7, UNKNOWN-L11, UNKNOWN-L15, UNKNOWN-L20, UNKNOWN-L21, UNKNOWN-L22, UNKNOWN-L26, UNKNOWN-L34, UNKNOWN-L41, UNKNOWN-L42, UNKNOWN-L43, UNKNOWN-L45, UNKNOWN-L46, UNKNOWN-L48, UNKNOWN-L63, UNKNOWN-L64, UNKNOWN-L68.",
+      "owner_role": "QA / SRE",
+      "horizon": "2–4 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Aumentar detecção pré-produção e reduzir MTTD do mecanismo.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0007",
+        "EV-0016",
+        "EV-0028"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-003",
+      "hypothesis_id": "HY-001",
+      "cluster_id": "CL-001",
+      "barrier_type": "preventive",
+      "statement": "Melhorar o template de bug com campos que faltaram nesta análise. Priorizar o cluster CL-001 e cobrir explicitamente os bugs UNKNOWN-L4, UNKNOWN-L7, UNKNOWN-L11, UNKNOWN-L15, UNKNOWN-L20, UNKNOWN-L21, UNKNOWN-L22, UNKNOWN-L26, UNKNOWN-L34, UNKNOWN-L41, UNKNOWN-L42, UNKNOWN-L43, UNKNOWN-L45, UNKNOWN-L46, UNKNOWN-L48, UNKNOWN-L63, UNKNOWN-L64, UNKNOWN-L68.",
+      "owner_role": "Engineering Manager / Product",
+      "horizon": "1–2 ciclos",
+      "priority": "medium",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Zero recorrência confirmada do mecanismo por dois ciclos.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0007",
+        "EV-0016",
+        "EV-0028"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-004",
+      "hypothesis_id": "HY-002",
+      "cluster_id": "CL-002",
+      "barrier_type": "corrective",
+      "statement": "Isolar a condição de falha e adicionar teste de regressão que falha antes do patch. Priorizar o cluster CL-002 e cobrir explicitamente os bugs UNKNOWN-L5, UNKNOWN-L6, UNKNOWN-L9, UNKNOWN-L13, UNKNOWN-L19, UNKNOWN-L23, UNKNOWN-L25, UNKNOWN-L27, UNKNOWN-L31, UNKNOWN-L32, UNKNOWN-L37, UNKNOWN-L39, UNKNOWN-L52, UNKNOWN-L53, UNKNOWN-L54, UNKNOWN-L57, UNKNOWN-L61, UNKNOWN-L71.",
+      "owner_role": "Tech Lead",
+      "horizon": "0–2 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Reproduzir o defeito antes e comprovar sua ausência após a correção.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0010",
+        "EV-0013",
+        "EV-0022"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-005",
+      "hypothesis_id": "HY-002",
+      "cluster_id": "CL-002",
+      "barrier_type": "detective",
+      "statement": "Executar o teste de regressão no gate de CI do módulo. Priorizar o cluster CL-002 e cobrir explicitamente os bugs UNKNOWN-L5, UNKNOWN-L6, UNKNOWN-L9, UNKNOWN-L13, UNKNOWN-L19, UNKNOWN-L23, UNKNOWN-L25, UNKNOWN-L27, UNKNOWN-L31, UNKNOWN-L32, UNKNOWN-L37, UNKNOWN-L39, UNKNOWN-L52, UNKNOWN-L53, UNKNOWN-L54, UNKNOWN-L57, UNKNOWN-L61, UNKNOWN-L71.",
+      "owner_role": "QA / SRE",
+      "horizon": "2–4 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Aumentar detecção pré-produção e reduzir MTTD do mecanismo.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0010",
+        "EV-0013",
+        "EV-0022"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-006",
+      "hypothesis_id": "HY-002",
+      "cluster_id": "CL-002",
+      "barrier_type": "preventive",
+      "statement": "Adicionar regra estática ou padrão de implementação para bloquear a classe de falha. Priorizar o cluster CL-002 e cobrir explicitamente os bugs UNKNOWN-L5, UNKNOWN-L6, UNKNOWN-L9, UNKNOWN-L13, UNKNOWN-L19, UNKNOWN-L23, UNKNOWN-L25, UNKNOWN-L27, UNKNOWN-L31, UNKNOWN-L32, UNKNOWN-L37, UNKNOWN-L39, UNKNOWN-L52, UNKNOWN-L53, UNKNOWN-L54, UNKNOWN-L57, UNKNOWN-L61, UNKNOWN-L71.",
+      "owner_role": "Engineering Manager / Product",
+      "horizon": "1–2 ciclos",
+      "priority": "medium",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Zero recorrência confirmada do mecanismo por dois ciclos.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0010",
+        "EV-0013",
+        "EV-0022"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-007",
+      "hypothesis_id": "HY-003",
+      "cluster_id": "CL-003",
+      "barrier_type": "corrective",
+      "statement": "Isolar a condição de falha e adicionar teste de regressão que falha antes do patch. Priorizar o cluster CL-003 e cobrir explicitamente os bugs UNKNOWN-L16, UNKNOWN-L29, UNKNOWN-L30, UNKNOWN-L33, UNKNOWN-L35, UNKNOWN-L40, UNKNOWN-L44, UNKNOWN-L47, UNKNOWN-L49, UNKNOWN-L50, UNKNOWN-L56, UNKNOWN-L62, UNKNOWN-L66, UNKNOWN-L70.",
+      "owner_role": "Tech Lead",
+      "horizon": "0–2 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Reproduzir o defeito antes e comprovar sua ausência após a correção.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0043",
+        "EV-0082",
+        "EV-0085"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-008",
+      "hypothesis_id": "HY-003",
+      "cluster_id": "CL-003",
+      "barrier_type": "detective",
+      "statement": "Executar o teste de regressão no gate de CI do módulo. Priorizar o cluster CL-003 e cobrir explicitamente os bugs UNKNOWN-L16, UNKNOWN-L29, UNKNOWN-L30, UNKNOWN-L33, UNKNOWN-L35, UNKNOWN-L40, UNKNOWN-L44, UNKNOWN-L47, UNKNOWN-L49, UNKNOWN-L50, UNKNOWN-L56, UNKNOWN-L62, UNKNOWN-L66, UNKNOWN-L70.",
+      "owner_role": "QA / SRE",
+      "horizon": "2–4 semanas",
+      "priority": "high",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Aumentar detecção pré-produção e reduzir MTTD do mecanismo.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0043",
+        "EV-0082",
+        "EV-0085"
+      ],
+      "status": "requires_human_review"
+    },
+    {
+      "action_id": "AC-009",
+      "hypothesis_id": "HY-003",
+      "cluster_id": "CL-003",
+      "barrier_type": "preventive",
+      "statement": "Adicionar regra estática ou padrão de implementação para bloquear a classe de falha. Priorizar o cluster CL-003 e cobrir explicitamente os bugs UNKNOWN-L16, UNKNOWN-L29, UNKNOWN-L30, UNKNOWN-L33, UNKNOWN-L35, UNKNOWN-L40, UNKNOWN-L44, UNKNOWN-L47, UNKNOWN-L49, UNKNOWN-L50, UNKNOWN-L56, UNKNOWN-L62, UNKNOWN-L66, UNKNOWN-L70.",
+      "owner_role": "Engineering Manager / Product",
+      "horizon": "1–2 ciclos",
+      "priority": "medium",
+      "expected_impact": "high",
+      "effort": "medium",
+      "success_metric": "Zero recorrência confirmada do mecanismo por dois ciclos.",
+      "validation_method": "Comparar a taxa do cluster antes e depois da ação e auditar no gate o teste ou a barreira adicionada.",
+      "residual_risk": "Se a hipótese for refutada, a ação pode reduzir apenas o sintoma; reavaliar após a validação causal.",
+      "evidence_ids": [
+        "EV-0043",
+        "EV-0082",
+        "EV-0085"
+      ],
+      "status": "requires_human_review"
+    }
+  ],
+  "narrative": {
+    "headline": "RCA de bugs de corrida mostra concentra??o visual em 3 clusters e baixa cobertura causal",
+    "executive_summary": "A base de 70 bugs apresenta concentra??o relevante em tr?s fam?lias: Rastreamento GPS, Integra??o Strava e An?lise de Negative Split. Os sinais apontam recorr?ncia de falhas visuais associadas a categorias de processo e implementa??o, com score de investiga??o acumulado mais alto nos dois primeiros clusters. Apesar disso, a cobertura causal ? limitada (0,0% com notas QA/Dev utiliz?veis), ent?o as hip?teses permanecem n?o confirmadas e exigem valida??o t?cnica controlada antes de qualquer conclus?o causal definitiva.",
+    "key_findings": [
+      "Tr?s clusters priorizados concentram 50 dos 70 bugs (71,4%), com maior peso em Rastreamento GPS (18) e Integra??o Strava (18).",
+      "A carga de alta criticidade atinge 38,6% (27/70), elevando o risco operacional mesmo sem confirma??o causal conclusiva.",
+      "H? lacuna estrutural de dados operacionais: sem datas v?lidas para MTTD/MTTR e sem ambiente conhecido para escape/reabertura mensur?veis."
+    ],
+    "systemic_patterns": [
+      "Predom?nio de bug type visual em toda a amostra sugere fragilidade sist?mica de renderiza??o/estado de interface, n?o evento isolado.",
+      "Sinais de processo e implementa??o aparecem repetidamente por m?dulo, indicando recorr?ncia por fam?lia funcional e n?o por ticket individual.",
+      "Baixa qualidade de metadados (IDs ausentes, ambiente e reabertura desconhecidos) reduz a capacidade de teste de hip?teses causais fortes."
+    ],
+    "root_cause_reviews": [
+      {
+        "root_cause_category": "process",
+        "title": "Rastreamento GPS: falhas visuais recorrentes com sinal de processo",
+        "summary": "O cluster CL-001 agrega 18 bugs com investiga??o alta, sugerindo mecanismo comum ainda n?o comprovado entre eventos de rastreamento e renderiza??o.",
+        "symptom_pattern": "Quebras visuais repetidas no m?dulo de GPS, com termos recorrentes ligados ao fluxo de corrida e bloqueio de tela.",
+        "likely_mechanism": "Hip?tese de falha de processo em transi??es ou sincroniza??o de estado, exigindo reprodu??o controlada para confirma??o.",
+        "business_impact": "Risco de fric??o na jornada de treino e perda de confian?a do usu?rio em funcionalidades centrais de corrida.",
+        "why_it_persists": "Aus?ncia de evid?ncia causal t?cnica e de barreiras de valida??o ponta a ponta mant?m recorr?ncia potencial.",
+        "evidence_ids": [
+          "EV-0007",
+          "EV-0016",
+          "EV-0028",
+          "EV-0040",
+          "EV-0055"
+        ]
+      },
+      {
+        "root_cause_category": "implementation",
+        "title": "Integra??o Strava: falhas de implementa??o com recorr?ncia visual",
+        "summary": "O cluster CL-002 re?ne 18 bugs e score elevado, com sinal consistente de implementa??o e sintomas de tela incompleta/carregamento.",
+        "symptom_pattern": "Ocorr?ncias de estado visual inconsistente no fluxo de integra??o, incluindo resumos incompletos e comportamento de loading.",
+        "likely_mechanism": "Poss?vel fragilidade em tratamento de estados ass?ncronos e contratos de integra??o, ainda sem teste causal conclusivo.",
+        "business_impact": "Afeta interoperabilidade com Strava e pode degradar experi?ncia de usu?rios que dependem da integra??o para acompanhamento de corrida.",
+        "why_it_persists": "Sem regress?o espec?fica no gate para o mecanismo suspeito, defeitos similares podem escapar de novo.",
+        "evidence_ids": [
+          "EV-0010",
+          "EV-0013",
+          "EV-0022",
+          "EV-0034",
+          "EV-0052"
+        ]
+      },
+      {
+        "root_cause_category": "implementation",
+        "title": "Negative Split: padr?o visual de menor severidade, mas recorrente",
+        "summary": "O cluster CL-003 tem 14 bugs com criticidade menor, por?m com padr?o textual consistente e repeti??o funcional suficiente para a??o preventiva.",
+        "symptom_pattern": "Inconsist?ncias visuais no contexto de m?tricas de split e precis?o, com repeti??o de termos t?cnicos semelhantes.",
+        "likely_mechanism": "Sinal de implementa??o possivelmente ligado a c?lculos de precis?o e exibi??o de estados intermedi?rios.",
+        "business_impact": "Impacto acumulado em confian?a anal?tica do usu?rio para performance de corrida, mesmo sem pico de criticidade.",
+        "why_it_persists": "Sem instrumenta??o diagn?stica e sem classifica??o contextual completa, a corre??o tende a atuar no sintoma.",
+        "evidence_ids": [
+          "EV-0043",
+          "EV-0082",
+          "EV-0085",
+          "EV-0094",
+          "EV-0100"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rca-agent-lab"
+version = "1.0.0"
+description = "Pipeline determinístico e skills agentic para RCA auditável"
+requires-python = ">=3.11"
+dependencies = [
+  "jsonschema>=4.21",
+  "openpyxl>=3.1",
+  "plotly>=5.20",
+  "PyYAML>=6.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+rca-agent = "rca_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

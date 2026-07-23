@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agent-review.schema.json",
+  "title": "Agent semantic review",
+  "type": "object",
+  "required": ["reviewed_by", "sources_consulted", "triage", "evidence", "insights", "hypotheses", "actions"],
+  "properties": {
+    "reviewed_by": {"type": "string", "minLength": 1},
+    "model": {"type": "string"},
+    "sources_consulted": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "status"],
+        "properties": {
+          "source": {"type": "string"},
+          "status": {"type": "string", "enum": ["consulted", "not_requested", "unavailable", "failed"]},
+          "details": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "triage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["bug_id", "confidence", "rationale", "review_status"],
+        "properties": {
+          "bug_id": {"type": "string"},
+          "suggested_severity": {"type": "string"},
+          "suggested_bug_type": {"type": "string"},
+          "suggested_root_cause_category": {"type": "string"},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+          "rationale": {"type": "string", "minLength": 8},
+          "review_status": {"type": "string", "enum": ["consistent", "questionable", "unsupported", "conflicting", "insufficient_evidence"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "evidence": {"type": "array", "items": {"$ref": "evidence.schema.json"}},
+    "insights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["insight_id", "statement", "evidence_ids", "limitations"],
+        "properties": {
+          "insight_id": {"type": "string", "pattern": "^IN-"},
+          "statement": {"type": "string", "minLength": 8},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "limitations": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["hypothesis_id", "cluster_id", "statement", "mechanism", "confidence", "confidence_rationale", "supporting_evidence_ids", "counter_evidence_ids", "missing_information", "confirmation_questions", "validation_method", "status"],
+        "properties": {
+          "hypothesis_id": {"type": "string", "pattern": "^HY-"},
+          "cluster_id": {"type": "string", "pattern": "^CL-"},
+          "statement": {"type": "string", "minLength": 12},
+          "mechanism": {"type": "string", "minLength": 12},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+          "confidence_rationale": {"type": "string", "minLength": 12},
+          "supporting_evidence_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "counter_evidence_ids": {"type": "array", "items": {"type": "string"}},
+          "missing_information": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "confirmation_questions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "validation_method": {"type": "string", "minLength": 12},
+          "status": {"const": "requires_human_review"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action_id", "hypothesis_id", "cluster_id", "barrier_type", "statement", "owner_role", "horizon", "priority", "expected_impact", "effort", "success_metric", "validation_method", "residual_risk", "evidence_ids", "status"],
+        "properties": {
+          "action_id": {"type": "string", "pattern": "^AC-"},
+          "hypothesis_id": {"type": "string", "pattern": "^HY-"},
+          "cluster_id": {"type": "string", "pattern": "^CL-"},
+          "barrier_type": {"type": "string", "enum": ["corrective", "detective", "preventive"]},
+          "statement": {"type": "string", "minLength": 16},
+          "owner_role": {"type": "string", "minLength": 2},
+          "horizon": {"type": "string", "minLength": 2},
+          "priority": {"type": "string", "enum": ["high", "medium", "low"]},
+          "expected_impact": {"type": "string", "enum": ["high", "medium", "low"]},
+          "effort": {"type": "string", "enum": ["high", "medium", "low"]},
+          "success_metric": {"type": "string", "minLength": 12},
+          "validation_method": {"type": "string", "minLength": 12},
+          "residual_risk": {"type": "string", "minLength": 4},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "status": {"const": "requires_human_review"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "narrative": {
+      "type": "object",
+      "required": ["headline", "executive_summary", "key_findings", "systemic_patterns", "root_cause_reviews"],
+      "properties": {
+        "headline": {"type": "string", "minLength": 12},
+        "executive_summary": {"type": "string", "minLength": 40},
+        "key_findings": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 12},
+          "minItems": 2
+        },
+        "systemic_patterns": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 12},
+          "minItems": 2
+        },
+        "kpi_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["kpi_id", "insight", "detailed_analysis"],
+            "properties": {
+              "kpi_id": {"type": "string"},
+              "insight": {"type": "string", "minLength": 16},
+              "detailed_analysis": {"type": "string", "minLength": 40},
+              "supporting_bug_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "limitations": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "root_cause_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["root_cause_category", "title", "summary", "symptom_pattern", "likely_mechanism", "business_impact", "why_it_persists", "evidence_ids"],
+            "properties": {
+              "root_cause_category": {"type": "string"},
+              "title": {"type": "string", "minLength": 8},
+              "summary": {"type": "string", "minLength": 24},
+              "symptom_pattern": {"type": "string", "minLength": 16},
+              "likely_mechanism": {"type": "string", "minLength": 16},
+              "business_impact": {"type": "string", "minLength": 16},
+              "why_it_persists": {"type": "string", "minLength": 16},
+              "evidence_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,101 @@
+escopo,cluster_id,hypothesis_id,tipo_lacuna,detalhe,acao_recomendada,status
+hipotese,CL-001,HY-001,contraevidencia_ausente,Nao ha contraevidencias registradas para tensionar a hipotese.,Buscar casos que contradigam o mecanismo proposto e anexar evidence_id rastreavel.,requires_human_review
+hipotese,CL-001,HY-001,dado_faltante,"Linha do tempo técnica correlacionando mudança, primeira ocorrência e mitigação.",Coletar dado objetivo e anexar evidencia vinculada ao bug/cluster.,requires_human_review
+hipotese,CL-001,HY-001,dado_faltante,Teste ou log que falhe antes da correção e passe depois da barreira aplicada.,Coletar dado objetivo e anexar evidencia vinculada ao bug/cluster.,requires_human_review
+hipotese,CL-001,HY-001,reproducao_pendente,"Reproduzir o cenário em ambiente controlado, correlacionar logs ou traces com a mudança suspeita e executar o teste de regressão antes e depois da correção proposta.",Executar reproducao controlada pre e pos-correcao para confirmar mecanismo causal.,requires_human_review
+hipotese,CL-002,HY-002,contraevidencia_ausente,Nao ha contraevidencias registradas para tensionar a hipotese.,Buscar casos que contradigam o mecanismo proposto e anexar evidence_id rastreavel.,requires_human_review
+hipotese,CL-002,HY-002,dado_faltante,"Linha do tempo técnica correlacionando mudança, primeira ocorrência e mitigação.",Coletar dado objetivo e anexar evidencia vinculada ao bug/cluster.,requires_human_review
+hipotese,CL-002,HY-002,dado_faltante,Teste ou log que falhe antes da correção e passe depois da barreira aplicada.,Coletar dado objetivo e anexar evidencia vinculada ao bug/cluster.,requires_human_review
+hipotese,CL-002,HY-002,reproducao_pendente,"Reproduzir o cenário em ambiente controlado, correlacionar logs ou traces com a mudança suspeita e executar o teste de regressão antes e depois da correção proposta.",Executar reproducao controlada pre e pos-correcao para confirmar mecanismo causal.,requires_human_review
+hipotese,CL-003,HY-003,contraevidencia_ausente,Nao ha contraevidencias registradas para tensionar a hipotese.,Buscar casos que contradigam o mecanismo proposto e anexar evidence_id rastreavel.,requires_human_review
+hipotese,CL-003,HY-003,dado_faltante,"Linha do tempo técnica correlacionando mudança, primeira ocorrência e mitigação.",Coletar dado objetivo e anexar evidencia vinculada ao bug/cluster.,requires_human_review
+hipotese,CL-003,HY-003,dado_faltante,Teste ou log que falhe antes da correção e passe depois da barreira aplicada.,Coletar dado objetivo e anexar evidencia vinculada ao bug/cluster.,requires_human_review
+hipotese,CL-003,HY-003,reproducao_pendente,"Reproduzir o cenário em ambiente controlado, correlacionar logs ou traces com a mudança suspeita e executar o teste de regressão antes e depois da correção proposta.",Executar reproducao controlada pre e pos-correcao para confirmar mecanismo causal.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 2.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 3.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 4.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 5.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 6.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 7.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 8.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 9.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 10.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 11.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 12.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 13.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 14.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 15.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 16.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 17.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 18.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 19.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 20.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 21.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 22.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 23.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 24.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 25.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 26.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 27.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 28.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 29.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 30.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 31.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 32.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 33.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 34.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 35.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 36.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 37.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 38.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 39.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 40.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 41.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 42.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 43.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 44.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 45.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 46.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 47.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 48.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 49.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 50.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 51.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 52.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 53.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 54.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 55.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 56.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 57.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 58.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 59.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 60.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 61.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 62.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 63.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 64.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 65.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 66.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 67.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 68.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 69.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 70.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+base,,,qualidade_missing_id,Issue de qualidade detectada: missing_id na linha fonte 71.,Completar campos obrigatorios no bug report para melhorar inferencia causal segura.,requires_human_review
+kpi,,,limitacao_production_escape_rate,Ambiente desconhecido é excluído do denominador.,Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+kpi,,,limitacao_reopen_rate,Bugs sem indicador de reabertura são excluídos.,Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+kpi,,,limitacao_mttd_hours,Somente pares de datas válidos e não negativos.,Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+kpi,,,limitacao_mttr_hours,Somente pares de datas válidos e não negativos.,Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+kpi,,,limitacao_causal_coverage_rate,Nota disponível não equivale a evidência causal confirmada.,Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+kpi,,,limitacao_high_severity_share,Usa a severidade reportada ou normalizada; não reflete impacto financeiro.,Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+kpi,,,limitacao_critical_bug_count,Contagem absoluta; deve ser lida junto da amostra total.,Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+kpi,,,limitacao_top_module_share,Não distingue incidentes correlatos de incidentes independentes no mesmo módulo.,Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+kpi,,,limitacao_top_bug_type_share,"Concentração alta sugere padrão, mas não prova mecanismo comum.",Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+kpi,,,limitacao_top_root_cause_share,Categoria reportada é sinal de triagem e pode conter viés de classificação.,Capturar metadados operacionais para habilitar calculo com denominador valido.,requires_human_review
+cluster,CL-004,,hipotese_nao_priorizada,Cluster com 11 bugs sem hipótese causal ativa no ciclo atual.,Definir critério de promoção para investigação causal quando houver aumento de criticidade ou recorrência.,requires_human_review
+cluster,CL-004,,plano_reproducao_ausente,Não há plano de reprodução formal para o cluster não priorizado.,Criar cenário mínimo reproduzível com entrada/saída esperada e evidência rastreável.,requires_human_review
+cluster,CL-005,,hipotese_nao_priorizada,Cluster com 9 bugs sem hipótese causal ativa no ciclo atual.,Definir critério de promoção para investigação causal quando houver aumento de criticidade ou recorrência.,requires_human_review
+cluster,CL-005,,plano_reproducao_ausente,Não há plano de reprodução formal para o cluster não priorizado.,Criar cenário mínimo reproduzível com entrada/saída esperada e evidência rastreável.,requires_human_review
+base,,,metadado_ambiente_ausente,Todos os clusters estão com ambiente unknown e sem denominador operacional válido.,Preencher ambiente em todos os novos bugs e retroalimentar os bugs abertos da base atual.,requires_human_review
+base,,,metadado_reabertura_ausente,Indicador reopened indisponível para toda a amostra analisada.,Registrar reabertura como campo obrigatório no fluxo de triagem e fechamento.,requires_human_review
+base,,,metadado_datas_ausentes,Sem pares de datas válidos para cálculo de MTTD e MTTR.,Capturar created_at detected_at resolved_at em formato padronizado e auditável.,requires_human_review
+base,,,evidencia_qa_dev_ausente,Não há notas QA/Dev utilizáveis para cobertura causal da base.,Tornar obrigatória a nota técnica de QA/Dev com evidência objetiva antes do fechamento do bug.,requires_human_review

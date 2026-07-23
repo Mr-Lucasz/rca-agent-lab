@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reportar bug"
+  short_description: "Estrutura relatos completos de defeitos"
+  default_prompt: "Use $report-bug para transformar estas evidências em um bug report auditável."

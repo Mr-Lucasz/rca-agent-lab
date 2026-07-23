@@ -1,0 +1,4 @@
+interface:
+  display_name: "Validar relatório"
+  short_description: "Aplica o quality gate do RCA"
+  default_prompt: "Use $validate-rca-report para validar os artefatos finais."

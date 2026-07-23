@@ -1,0 +1,101 @@
+canonical:
+  requirements:
+    display_name: Leitura de requisito e aceite
+    aliases: [requirements, requisito, especificação, especificacao]
+    keywords: [critério de aceite, criterio de aceite, requisito, especificação, especificacao, ambíguo, ambiguo]
+    analysis_lens:
+      symptom_pattern: O defeito nasce quando a regra de negócio muda de interpretação entre QA, produto e implementação.
+      likely_mechanism: O time entrega sobre um entendimento incompleto, ambíguo ou parcialmente validado.
+      business_impact: O bug reaparece porque a definição do comportamento correto não está estável.
+      why_it_persists: Sem um aceite testável, cada correção tende a resolver só o caso visível.
+  design:
+    display_name: Fragilidade de desenho técnico
+    aliases: [design, arquitetura, solução, solucao]
+    keywords: [arquitetura, acoplamento, desenho, estado, concorrência, concorrencia]
+    analysis_lens:
+      symptom_pattern: Os bugs se espalham por vários fluxos ligados pela mesma decisão estrutural.
+      likely_mechanism: A arquitetura ou o desenho do fluxo não absorve bem concorrência, acoplamento ou estados intermediários.
+      business_impact: O problema contamina múltiplos pontos do produto e encarece a correção.
+      why_it_persists: Correções locais aliviam sintomas, mas a superfície defeituosa continua ativa no desenho base.
+  implementation:
+    display_name: Falha de implementação
+    aliases: [implementation, implementação, implementacao, código, codigo]
+    keywords: [código, codigo, condição, condicao, null, exceção, excecao, lógica, logica]
+    analysis_lens:
+      symptom_pattern: O defeito aparece como comportamento incorreto, intermitência ou validação fora de ordem no fluxo de aplicação.
+      likely_mechanism: A lógica executada não protege corretamente estados, retries, nulos, ordem de operações ou branches críticos.
+      business_impact: A falha costuma atingir a experiência final sem necessariamente disparar alertas estruturados.
+      why_it_persists: O time corrige o ponto visível, mas mantém a mesma fragilidade de implementação em fluxos vizinhos.
+  integration-contract:
+    display_name: Quebra de contrato de integração
+    aliases: [integration contract, contrato, integração, integracao]
+    keywords: [contrato, schema, payload, api, versão, versao, incompatível, incompativel]
+    analysis_lens:
+      symptom_pattern: O mesmo erro reaparece quando produtor e consumidor evoluem em ritmos diferentes.
+      likely_mechanism: Mudança de schema, tipo, versão ou suposição de payload sem compatibilidade explícita.
+      business_impact: A integração perde previsibilidade e falha exatamente nos fluxos mais críticos de sincronização.
+      why_it_persists: O problema continua enquanto o contrato não for tratado como artefato testável, versionado e monitorado.
+  configuration:
+    display_name: Drift ou ausência de configuração
+    aliases: [configuration, configuração, configuracao, ambiente]
+    keywords: [configuração, configuracao, variável, variavel, feature flag, ambiente, secret]
+    analysis_lens:
+      symptom_pattern: O comportamento difere por ambiente, deploy ou flag sem mudança relevante de código.
+      likely_mechanism: Variáveis, permissões, manifests ou dependências de ambiente não estão blindados no pipeline.
+      business_impact: O produto entra em produção com defaults inseguros ou sem capacidade esperada.
+      why_it_persists: Configuração ainda depende de memória operacional, ajustes manuais ou validação tardia.
+  data-quality:
+    display_name: Integridade e qualidade de dados
+    aliases: [data quality, qualidade de dados, dados]
+    keywords: [dado inválido, dado invalido, duplicado, migração, migracao, integridade]
+    analysis_lens:
+      symptom_pattern: O sistema aceita, duplica, corrompe ou interpreta dados fora de ordem sem proteção suficiente.
+      likely_mechanism: Chaves, constraints, validações ou regras de idempotência não estão defendendo o fluxo.
+      business_impact: O defeito compromete confiança operacional, reconciliação e consistência dos registros.
+      why_it_persists: Enquanto a barreira estiver depois da gravação ou dependente de convenção, a recorrência continua provável.
+  test-gap:
+    display_name: Lacuna de teste
+    aliases: [test gap, cobertura, teste]
+    keywords: [sem teste, cobertura, cenário não testado, cenario nao testado, mock]
+    analysis_lens:
+      symptom_pattern: O bug escapa apesar de haver pipeline verde ou cobertura aparentemente suficiente.
+      likely_mechanism: A automação não cobre o cenário real, o dado crítico ou a combinação de dependências que falha em produção.
+      business_impact: O time ganha velocidade aparente, mas perde confiança no sinal de qualidade.
+      why_it_persists: Testes validam presença e caminho feliz, não comportamento real sob carga, tempo ou integração.
+  deployment:
+    display_name: Falha de deploy ou release
+    aliases: [deployment, deploy, release]
+    keywords: [deploy, rollback, release, pipeline, artefato]
+    analysis_lens:
+      symptom_pattern: O bug aparece logo após release, rollback parcial ou troca de artefato.
+      likely_mechanism: O pacote entregue, a ordem do rollout ou a validação pós-deploy não está protegendo o ambiente.
+      business_impact: Incidentes ganham escala rápido porque o erro entra pelo canal de distribuição oficial.
+      why_it_persists: Sem gates de release mais fortes, o processo continua repetindo o mesmo tipo de escape.
+  observability-gap:
+    display_name: Lacuna de observabilidade
+    aliases: [observability, observabilidade, monitoramento]
+    keywords: [sem log, log insuficiente, alerta, monitoramento, trace, métrica, metrica]
+    analysis_lens:
+      symptom_pattern: O time percebe o bug tarde ou investiga com baixa resolução do que aconteceu primeiro.
+      likely_mechanism: Logs, métricas, traces ou alertas não isolam o mecanismo e deixam a análise reativa.
+      business_impact: O MTTR sobe e a correção tende a atacar hipótese fraca em vez da origem do defeito.
+      why_it_persists: Sem telemetria útil, cada incidente reabre a mesma discussão investigativa.
+  process:
+    display_name: Falha de processo e handoff
+    aliases: [process, processo, comunicação, comunicacao]
+    keywords: [processo, handoff, comunicação, comunicacao, aprovação, aprovacao]
+    analysis_lens:
+      symptom_pattern: Os bugs mudam de forma, mas repetem o mesmo ruído entre times, sprint após sprint.
+      likely_mechanism: Critérios, ownership, validações e handoffs não estão fechando a prevenção sistêmica.
+      business_impact: O time gasta energia reagindo, sem converter aprendizado em barreira durável.
+      why_it_persists: O processo trata incidente como exceção isolada e não como família recorrente.
+  unknown:
+    display_name: Sinal ainda inconclusivo
+    aliases: [unknown, desconhecida, não determinada, nao determinada]
+    keywords: []
+    analysis_lens:
+      symptom_pattern: Há recorrência observável, mas a evidência ainda não fecha em um único mecanismo dominante.
+      likely_mechanism: Faltam dados, contraevidências ou reproduções para reduzir a ambiguidade com segurança.
+      business_impact: O risco maior aqui é simplificar demais e institucionalizar uma causa fraca.
+      why_it_persists: Sem validação adicional, o time tende a girar entre sintomas, suposições e correções superficiais.
+

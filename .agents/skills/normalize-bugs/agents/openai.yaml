@@ -1,0 +1,4 @@
+interface:
+  display_name: "Normalizar bugs"
+  short_description: "Valida e normaliza bases de defeitos"
+  default_prompt: "Use $normalize-bugs para validar e normalizar este arquivo de bugs."

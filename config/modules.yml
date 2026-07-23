@@ -1,0 +1,3 @@
+canonical: {}
+policy: "Valores são aprendidos da entrada; aliases locais podem ser adicionados sem mudar o código."
+
