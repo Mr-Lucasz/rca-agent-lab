@@ -5,8 +5,41 @@
   "type": "object",
   "required": ["reviewed_by", "sources_consulted", "triage", "evidence", "insights", "hypotheses", "actions"],
   "properties": {
-    "reviewed_by": {"type": "string", "minLength": 1},
+    "reviewed_by": {"type": "string"},
     "model": {"type": "string"},
+    "clarification_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question_id", "field", "question_type", "question", "bug_ids", "proposals", "rationale", "status"],
+        "properties": {
+          "question_id": {"type": "string", "pattern": "^CQ-"},
+          "field": {"type": "string", "minLength": 2},
+          "question_type": {"type": "string", "enum": ["confirm_suggestions", "confirm_field_mapping", "request_information"]},
+          "question": {"type": "string", "minLength": 12},
+          "bug_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "proposals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["suggested_value", "confidence", "rationale"],
+              "properties": {
+                "bug_id": {"type": "string"},
+                "source_field": {"type": "string"},
+                "suggested_value": {"type": "string"},
+                "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+                "rationale": {"type": "string"}
+              },
+              "additionalProperties": false
+            }
+          },
+          "rationale": {"type": "string", "minLength": 12},
+          "status": {"type": "string", "enum": ["open", "accepted", "answered", "declined"]},
+          "answer": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
     "sources_consulted": {
       "type": "array",
       "items": {
@@ -30,7 +63,7 @@
           "suggested_severity": {"type": "string"},
           "suggested_bug_type": {"type": "string"},
           "suggested_root_cause_category": {"type": "string"},
-          "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low", "unassessed"]},
           "rationale": {"type": "string", "minLength": 8},
           "review_status": {"type": "string", "enum": ["consistent", "questionable", "unsupported", "conflicting", "insufficient_evidence"]}
         },
@@ -61,8 +94,30 @@
           "hypothesis_id": {"type": "string", "pattern": "^HY-"},
           "cluster_id": {"type": "string", "pattern": "^CL-"},
           "statement": {"type": "string", "minLength": 12},
+          "estimated_rework_hours": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "description": "Optional estimate. It is valid only with an explicit, reproducible estimate_basis."
+          },
+          "estimate_basis": {
+            "type": "object",
+            "required": ["method", "supporting_evidence_ids", "assumptions"],
+            "properties": {
+              "method": {"type": "string", "minLength": 12},
+              "supporting_evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"},
+                "minItems": 1
+              },
+              "assumptions": {
+                "type": "array",
+                "items": {"type": "string", "minLength": 4}
+              }
+            },
+            "additionalProperties": false
+          },
           "mechanism": {"type": "string", "minLength": 12},
-          "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low", "unassessed"]},
           "confidence_rationale": {"type": "string", "minLength": 12},
           "supporting_evidence_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
           "counter_evidence_ids": {"type": "array", "items": {"type": "string"}},
@@ -83,7 +138,7 @@
           "action_id": {"type": "string", "pattern": "^AC-"},
           "hypothesis_id": {"type": "string", "pattern": "^HY-"},
           "cluster_id": {"type": "string", "pattern": "^CL-"},
-          "barrier_type": {"type": "string", "enum": ["corrective", "detective", "preventive"]},
+          "barrier_type": {"type": "string", "enum": ["containment", "corrective", "detective", "preventive"]},
           "statement": {"type": "string", "minLength": 16},
           "owner_role": {"type": "string", "minLength": 2},
           "horizon": {"type": "string", "minLength": 2},
@@ -101,7 +156,7 @@
     },
     "narrative": {
       "type": "object",
-      "required": ["headline", "executive_summary", "key_findings", "systemic_patterns", "root_cause_reviews"],
+      "required": ["headline", "executive_summary", "key_findings", "systemic_patterns", "root_cause_signal_reviews"],
       "properties": {
         "headline": {"type": "string", "minLength": 12},
         "executive_summary": {"type": "string", "minLength": 40},
@@ -114,6 +169,28 @@
           "type": "array",
           "items": {"type": "string", "minLength": 12},
           "minItems": 2
+        },
+        "methodology_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["heading", "subtitle", "chart_title", "labels", "values", "insight", "detailed_analysis", "evidence_ids"],
+            "properties": {
+              "heading": {"type": "string"},
+              "subtitle": {"type": "string"},
+              "chart_title": {"type": "string"},
+              "labels": {"type": "array", "items": {"type": "string"}},
+              "values": {"type": "array", "items": {"type": "number"}},
+              "insight": {"type": "string", "minLength": 16},
+              "detailed_analysis": {"type": "string", "minLength": 40},
+              "evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"},
+                "minItems": 1
+              }
+            },
+            "additionalProperties": false
+          }
         },
         "kpi_reviews": {
           "type": "array",
@@ -136,19 +213,48 @@
             "additionalProperties": false
           }
         },
-        "root_cause_reviews": {
+        "cluster_gap_reviews": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["root_cause_category", "title", "summary", "symptom_pattern", "likely_mechanism", "business_impact", "why_it_persists", "evidence_ids"],
+            "required": ["cluster_id", "reason", "available_evidence", "missing_information", "next_step", "evidence_ids"],
+            "properties": {
+              "cluster_id": {"type": "string", "pattern": "^CL-"},
+              "reason": {"type": "string", "minLength": 16},
+              "available_evidence": {
+                "type": "array",
+                "items": {"type": "string", "minLength": 8},
+                "minItems": 1
+              },
+              "missing_information": {
+                "type": "array",
+                "items": {"type": "string", "minLength": 8},
+                "minItems": 1
+              },
+              "next_step": {"type": "string", "minLength": 16},
+              "evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"},
+                "minItems": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "root_cause_signal_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["root_cause_category", "signal_axis", "title", "summary", "symptom_pattern", "hypothesized_mechanism", "business_impact", "persistence_hypothesis", "evidence_ids"],
             "properties": {
               "root_cause_category": {"type": "string"},
+              "signal_axis": {"type": "string", "minLength": 3},
               "title": {"type": "string", "minLength": 8},
               "summary": {"type": "string", "minLength": 24},
               "symptom_pattern": {"type": "string", "minLength": 16},
-              "likely_mechanism": {"type": "string", "minLength": 16},
+              "hypothesized_mechanism": {"type": "string", "minLength": 16},
               "business_impact": {"type": "string", "minLength": 16},
-              "why_it_persists": {"type": "string", "minLength": 16},
+              "persistence_hypothesis": {"type": "string", "minLength": 16},
               "evidence_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1}
             },
             "additionalProperties": false

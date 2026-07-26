@@ -1,4 +1,4 @@
-from rca_agent.quality import run_quality_gate
+from rca_agent.quality import QualityGate, run_quality_gate
 
 
 def test_gate_rejects_hypothesis_without_evidence():
@@ -6,7 +6,7 @@ def test_gate_rejects_hypothesis_without_evidence():
         "bugs": [{"bug_id": "B-1"}],
         "data_quality": {
             "total_records": 1,
-            "causal_coverage_percent": 0,
+            "causal_signal_coverage_percent": 0,
             "prompt_injection_rows": [],
         },
         "metrics": {"distributions": {"severity": {"unknown": 1}}},
@@ -30,4 +30,17 @@ def test_gate_rejects_hypothesis_without_evidence():
     gate = run_quality_gate(analysis)
     assert gate["status"] == "failed"
     assert any(item["code"] == "hypothesis_without_evidence" for item in gate["errors"])
+
+
+def test_quality_gate_accepts_independent_custom_checks():
+    def require_owner(analysis, findings):
+        if not analysis.get("metadata", {}).get("owner"):
+            findings.error("missing_owner", "A análise precisa de um responsável.")
+
+    gate = QualityGate([require_owner]).run({"bugs": []})
+
+    assert gate["status"] == "failed"
+    assert gate["errors"] == [
+        {"code": "missing_owner", "message": "A análise precisa de um responsável."}
+    ]
 

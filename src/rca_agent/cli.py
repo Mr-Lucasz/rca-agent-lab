@@ -3,9 +3,18 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from pathlib import Path
 
-from .pipeline import QualityGateError, analyze, finalize, prepare, report_bug, validate_report
+from .pipeline import (
+    ClarificationRequiredError,
+    QualityGateError,
+    analyze,
+    finalize,
+    prepare,
+    prepare_review_questions,
+    record_clarification,
+    report_bug,
+    validate_report,
+)
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -29,6 +38,26 @@ def _parser() -> argparse.ArgumentParser:
     finalize_parser.add_argument("--review")
     finalize_parser.add_argument("--output", required=True)
 
+    questions_parser = sub.add_parser(
+        "review-questions",
+        help="Converter sugestões semânticas do review em perguntas humanas.",
+    )
+    questions_parser.add_argument("--work", required=True)
+    questions_parser.add_argument("--review", required=True)
+
+    clarify_parser = sub.add_parser(
+        "clarify",
+        help="Registrar uma decisão humana para uma pergunta aberta.",
+    )
+    clarify_parser.add_argument("--work", required=True)
+    clarify_parser.add_argument("--question", required=True)
+    clarify_parser.add_argument(
+        "--status",
+        choices=["accepted", "answered", "declined"],
+        required=True,
+    )
+    clarify_parser.add_argument("--answer")
+
     validate_parser = sub.add_parser("validate", help="Validar HTML e CSV finais.")
     validate_parser.add_argument("report")
 
@@ -47,6 +76,15 @@ def main(argv: list[str] | None = None) -> int:
             result = analyze(args.input, args.output)
         elif args.command == "finalize":
             result = finalize(args.work, args.output, args.review)
+        elif args.command == "review-questions":
+            result = prepare_review_questions(args.work, args.review)
+        elif args.command == "clarify":
+            result = record_clarification(
+                args.work,
+                args.question,
+                args.status,
+                args.answer,
+            )
         elif args.command == "validate":
             result = validate_report(args.report)
         elif args.command == "report-bug":
@@ -55,7 +93,12 @@ def main(argv: list[str] | None = None) -> int:
             raise AssertionError(args.command)
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0
-    except (ValueError, FileNotFoundError, QualityGateError) as error:
+    except (
+        ClarificationRequiredError,
+        ValueError,
+        FileNotFoundError,
+        QualityGateError,
+    ) as error:
         print(f"ERRO: {error}", file=sys.stderr)
         return 2
 

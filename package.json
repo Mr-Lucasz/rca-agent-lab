@@ -6,7 +6,7 @@
   "scripts": {
     "rca": "python scripts/rca.py",
     "demo": "python scripts/rca.py analyze data/input/bugs-demo.csv --output reports/demo --mode rules",
-    "lint": "python scripts/check_repo.py",
+    "lint": "python scripts/check_repo.py && python -m ruff check src scripts tests",
     "typecheck": "python -m compileall -q src scripts tests",
     "test": "python -m pytest -q",
     "check": "npm run lint && npm run typecheck && npm test"

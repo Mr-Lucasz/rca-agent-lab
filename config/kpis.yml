@@ -1,8 +1,146 @@
-kpis:
-  - {id: defect_count, label: "Bugs analisados", formula: "count(distinct source rows)"}
-  - {id: production_escape_rate, label: "Escape para produção", formula: "bugs detectados em produção / bugs com ambiente conhecido"}
-  - {id: reopen_rate, label: "Taxa de reabertura", formula: "bugs reabertos / bugs com indicador conhecido"}
-  - {id: mttd_hours, label: "MTTD", formula: "média(detected_at - created_at), em horas"}
-  - {id: mttr_hours, label: "MTTR", formula: "média(resolved_at - created_at), em horas"}
-  - {id: causal_coverage_rate, label: "Cobertura causal", formula: "bugs com notas QA/Dev / bugs analisados"}
+methodology:
+  version: 2
+  unknown_value: unknown
+  duration_source_policy: first_valid_per_record
+  maximum_supporting_bug_ids: 10
 
+kpis:
+  - id: defect_count
+    label: "Bugs analisados"
+    unit: count
+    chart: value
+    definition: "Quantidade de registros de bug válidos incluídos nesta análise."
+    formula: "count(rows)"
+    limitation: "Contagem de registros; IDs repetidos permanecem visíveis no relatório de qualidade."
+    calculation:
+      type: count_records
+
+  - id: production_escape_rate
+    label: "Escape para produção"
+    unit: percent
+    chart: progress
+    definition: "Percentual de bugs com ambiente conhecido que foram detectados em produção."
+    formula: "environment = production / environment conhecido × 100"
+    limitation: "Ambiente desconhecido é excluído do denominador; o indicador não mede quando o defeito foi introduzido."
+    calculation:
+      type: categorical_rate
+      field: environment
+      numerator_values: [production]
+      excluded_values: [unknown]
+
+  - id: reopen_rate
+    label: "Taxa de reabertura"
+    unit: percent
+    chart: progress
+    definition: "Percentual de bugs com indicador de reabertura conhecido que foram reabertos."
+    formula: "reopened = true / reopened conhecido × 100"
+    limitation: "Bugs sem indicador de reabertura são excluídos."
+    calculation:
+      type: categorical_rate
+      field: reopened
+      numerator_values: ["true"]
+      excluded_values: [unknown]
+
+  - id: detection_lead_time_hours
+    label: "Lead time de detecção"
+    unit: hours
+    chart: value
+    definition: "Tempo médio entre o início observável da ocorrência e sua detecção, ou duração explicitamente reportada pela fonte."
+    formula: "mean(detection_time_hours; senão detected_at - occurrence_started_at)"
+    limitation: "Não é calculado a partir da criação do ticket. Sem duração reportada ou início observável da ocorrência, o valor permanece indisponível."
+    calculation:
+      type: duration_mean
+      sources:
+        - kind: reported
+          field: detection_time_hours
+        - kind: elapsed
+          start_field: occurrence_started_at
+          end_field: detected_at
+
+  - id: ticket_resolution_time_hours
+    label: "Tempo de resolução do ticket"
+    unit: hours
+    chart: value
+    definition: "Tempo médio de ciclo do ticket, da criação à resolução, ou duração explicitamente reportada pela fonte."
+    formula: "mean(resolution_time_hours; senão resolved_at - created_at)"
+    limitation: "Mede o ciclo administrativo do ticket e não deve ser apresentado como tempo de restauração do serviço (MTTR)."
+    calculation:
+      type: duration_mean
+      sources:
+        - kind: reported
+          field: resolution_time_hours
+        - kind: elapsed
+          start_field: created_at
+          end_field: resolved_at
+
+  - id: high_severity_share
+    label: "Carga de alta criticidade"
+    unit: percent
+    chart: progress
+    definition: "Participação de bugs classificados como críticos ou altos no volume analisado."
+    formula: "severity em {critical, high} / bugs analisados × 100"
+    limitation: "Usa a severidade efetiva confirmada; não estima impacto financeiro."
+    calculation:
+      type: category_set_rate
+      field: severity
+      numerator_values: [critical, high]
+
+  - id: critical_bug_count
+    label: "Bugs críticos"
+    unit: count
+    chart: value
+    definition: "Quantidade absoluta de bugs classificados como críticos."
+    formula: "count(severity = critical)"
+    limitation: "Contagem absoluta; deve ser lida junto da amostra total."
+    calculation:
+      type: category_count
+      field: severity
+      values: [critical]
+
+  - id: causal_signal_coverage_rate
+    label: "Cobertura de sinais causais documentados"
+    unit: percent
+    chart: progress
+    definition: "Percentual de bugs com ao menos uma nota QA/Dev contendo observação, análise ou hipótese sobre o defeito."
+    formula: "bugs com qa_analysis_notes ou dev_analysis_notes / bugs analisados × 100"
+    limitation: "Mede a disponibilidade de material causal reportado, não sua força isolada. A força do sinal depende de recorrência, convergência entre fontes, especificidade técnica e coerência com comportamento, bug type, severidade, módulo, ambiente e sinal RCA."
+    calculation:
+      type: any_present_rate
+      fields: [qa_analysis_notes, dev_analysis_notes]
+      excluded_values: [unknown, ""]
+
+  - id: top_module_share
+    label: "Concentração no módulo líder"
+    unit: percent
+    chart: progress
+    definition: "Participação do módulo com maior volume de bugs na base."
+    formula: "count(módulo mais frequente e conhecido) / bugs analisados × 100"
+    limitation: "Não distingue incidentes correlatos de incidentes independentes no mesmo módulo."
+    calculation:
+      type: dominant_share
+      field: affected_module
+      excluded_values: [unknown]
+
+  - id: top_bug_type_share
+    label: "Bug type dominante"
+    unit: percent
+    chart: progress
+    definition: "Participação do tipo de bug mais frequente na base."
+    formula: "count(bug_type mais frequente e conhecido) / bugs analisados × 100"
+    limitation: "Mede frequência; não testa se os registros compartilham um mecanismo."
+    calculation:
+      type: dominant_share
+      field: bug_type
+      excluded_values: [unknown]
+
+  - id: top_root_cause_share
+    label: "Sinal RCA dominante"
+    unit: percent
+    chart: progress
+    definition: "Participação do sinal de categoria RCA mais frequente na base."
+    formula: "count(root_cause_category mais frequente e conhecida) / bugs analisados × 100"
+    limitation: "Categoria reportada é sinal de triagem, pode misturar eixos e não confirma causalidade."
+    calculation:
+      type: dominant_share
+      field: root_cause_category
+      excluded_values: [unknown]

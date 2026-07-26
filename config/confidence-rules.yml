@@ -1,19 +1,53 @@
-classification:
-  high:
-    minimum_score: 0.80
-    meaning: "Múltiplos sinais coerentes e específicos."
-  medium:
-    minimum_score: 0.55
-    meaning: "Evidência parcial, mas consistente."
-  low:
-    minimum_score: 0.00
-    meaning: "Sinal exploratório ou dados escassos."
-causal:
-  high:
-    requirements: ["Duas ou mais fontes independentes.", "Relação temporal verificável.", "Mecanismo técnico plausível.", "Evidência contrária tratada."]
-  medium:
-    requirements: ["Evidência textual ou correlação forte.", "Mecanismo plausível.", "Confirmação técnica ainda ausente."]
-  low:
-    requirements: ["Poucos registros ou uma única fonte.", "Dependência relevante de inferência."]
-  rules_only_cap: medium
+methodology:
+  version: 2
+  calibration_status: uncalibrated
+  prohibition: "Quantidade de registros ou repetição textual, isoladamente, não aumenta confiança. Recorrência independente, convergência entre fontes, especificidade técnica e coerência com outros indicadores podem elevar a força de uma hipótese."
 
+classification:
+  unassessed:
+    meaning: "Não houve avaliação humana ou validação contra conjunto rotulado."
+  high:
+    requirements:
+      - "Critério de classificação explícito e aplicável."
+      - "Dois ou mais sinais independentes e coerentes."
+      - "Nenhum conflito material não resolvido."
+  medium:
+    requirements:
+      - "Critério explícito com evidência parcial."
+      - "Conflitos e informação ausente registrados."
+  low:
+    requirements:
+      - "Sinal exploratório, fonte única ou dados escassos."
+
+causal:
+  default: low
+  high:
+    requirements:
+      - "Temporalidade observada e compatível com o mecanismo."
+      - "Mecanismo técnico específico e testável."
+      - "Evidências independentes que liguem mecanismo e efeito."
+      - "Explicações alternativas e contraevidências tratadas."
+      - "Teste causal ou quase-experimental reproduzível concluído."
+  medium:
+    requirements:
+      - "Temporalidade e mecanismo específicos e plausíveis."
+      - "Convergência entre notas de bugs ou fontes distintas, ou coerência repetida com comportamento, bug type, severidade, módulo, ambiente e sinal RCA."
+      - "Possíveis cópias, dependência entre fontes, conflitos e contraevidências tratados."
+      - "Método falsificável ainda pendente."
+  low:
+    requirements:
+      - "Nota isolada, associação genérica, fontes dependentes, contradição não resolvida ou padrão observacional pouco específico."
+  rules_only_cap: low
+  always_requires_human_review: true
+
+causal_signal_synthesis:
+  strong_indicator:
+    - "O mesmo mecanismo específico aparece em bugs distintos, sem indício de simples cópia."
+    - "QA e Dev convergem, ou fontes independentes descrevem partes compatíveis do mesmo mecanismo."
+    - "O padrão é coerente com comportamento observado, bug type, severidade, módulo, ambiente, versão, time ou sinal RCA."
+    - "Contraexemplos e explicações alternativas foram procurados e registrados."
+  insufficient_by_itself:
+    - "Contagem de notas presentes."
+    - "Frequência de palavras sem interpretação do mecanismo."
+    - "Repetição da mesma declaração por uma única fonte."
+  confirmation_boundary: "Um forte indicativo sustenta hipótese causal prioritária; causa confirmada exige validação reproduzível."

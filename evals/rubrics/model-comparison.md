@@ -9,7 +9,7 @@ Executar ambos sobre a mesma versão do repositório e a mesma entrada, sem comp
 5. Qualidade causal: mecanismo plausível, contraevidência, lacunas e teste falsificável.
 6. Taxa de afirmações sem evidência.
 7. Capacidade de reconhecer dados insuficientes.
-8. Especificidade das três barreiras.
+8. Especificidade e adequação dos controles ao mecanismo, sem impor quantidade ou tipo artificial.
 9. Integridade bug → cluster → hipótese → ação.
 10. Consistência entre três execuções independentes.
 

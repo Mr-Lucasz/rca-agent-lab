@@ -1,11 +1,13 @@
 ---
 name: recommend-rca-actions
-description: Recomendar ações RCA específicas, rastreáveis e mensuráveis a partir de hipóteses sustentadas. Usar após análise causal para criar barreiras corretivas, detetivas e preventivas.
+description: Recomendar ações RCA específicas, rastreáveis e mensuráveis a partir de hipóteses sustentadas. Usar após análise causal para selecionar controles adequados ao mecanismo e à evidência.
 ---
 
 # Recomendar ações
 
-Para cada hipótese prioritária, criar uma barreira `corrective`, uma `detective` e uma `preventive`. Informar hipótese, evidências, dono por papel, horizonte, prioridade, impacto, esforço, métrica, validação e risco residual. Usar `config/action-matrix.yml` como ponto de partida e tornar a ação específica.
+Ler `config/action-policy.yml`. Para cada hipótese prioritária, selecionar somente os controles necessários entre `containment`, `corrective`, `detective` e `preventive`. Não criar uma ação de cada tipo por obrigação.
 
-Rejeitar ações genéricas sem mecanismo e critério verificável.
+Cada ação deve informar hipótese, evidências, dono por papel, horizonte, prioridade, impacto esperado, esforço, métrica, validação e risco residual. A prioridade e o impacto são julgamentos revisáveis, não saídas automáticas do score do cluster.
+
+Rejeitar ações genéricas, ações sem vínculo com o mecanismo e ações sem critério verificável.
 

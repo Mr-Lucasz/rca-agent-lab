@@ -7,6 +7,7 @@
   "properties": {
     "metadata": {"type": "object"},
     "data_quality": {"type": "object"},
+    "clarification_questions": {"type": "array"},
     "bugs": {"type": "array", "items": {"$ref": "bug.schema.json"}},
     "metrics": {"type": "object"},
     "clusters": {"type": "array"},
