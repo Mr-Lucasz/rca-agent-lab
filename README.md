@@ -21,17 +21,6 @@ Métricas, parsing e HTML são determinísticos e testáveis; não ganham qualid
 ## Uso direto, sem LLM
 
 ```bash
-    G --> H["Quality gate"]
-    H --> I["CSV normalizado + HTML autocontido"]
-```
-
-## Por que um agente e várias skills
-
-Métricas, parsing e HTML são determinísticos e testáveis; não ganham qualidade por virarem “agentes”. O orquestrador usa skills onde contexto e julgamento importam: revisar classificação, relacionar evidências, testar hipóteses e criar ações específicas.
-
-## Uso direto, sem LLM
-
-```bash
 python -m pip install -e ".[dev]"
 npm run rca -- analyze data/input/bugs-demo.csv --output reports/demo
 ```
