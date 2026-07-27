@@ -1,0 +1,28 @@
+methodology:
+  version: 1
+  rule: "A quantidade e o tipo de controles dependem do mecanismo e da evidência; não existe obrigação automática de gerar três ações."
+
+allowed_control_types:
+  - containment
+  - corrective
+  - detective
+  - preventive
+
+coverage:
+  minimum_actions_per_hypothesis: 1
+
+content_validation:
+  minimum_statement_length: 16
+  generic_statements:
+    - "melhorar testes"
+    - "aumentar cobertura"
+    - "melhorar comunicação"
+    - "prestar mais atenção"
+    - "revisar processo"
+
+required_fields:
+  - owner_role
+  - horizon
+  - success_metric
+  - validation_method
+  - residual_risk

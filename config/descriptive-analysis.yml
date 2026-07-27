@@ -1,0 +1,135 @@
+methodology:
+  version: 1
+
+distributions:
+  fields:
+    - severity
+    - environment
+    - affected_module
+    - bug_type
+    - root_cause_category
+    - team
+    - version
+
+cross_tabs:
+  severity_by_bug_type:
+    row: bug_type
+    column: severity
+    label: "Severidade por bug type"
+    row_label: "Bug type"
+    column_label: "Severidade"
+  root_cause_by_bug_type:
+    row: bug_type
+    column: root_cause_category
+    label: "Sinal RCA por bug type"
+    row_label: "Bug type"
+    column_label: "Categoria RCA"
+  bug_type_by_root_cause:
+    row: root_cause_category
+    column: bug_type
+    label: "Tipos de bug por sinal RCA"
+    row_label: "Categoria RCA"
+    column_label: "Bug type"
+  severity_by_root_cause:
+    row: root_cause_category
+    column: severity
+    label: "Criticidade por sinal RCA"
+    row_label: "Categoria RCA"
+    column_label: "Severidade"
+  environment_by_module:
+    row: affected_module
+    column: environment
+    label: "Ambiente por módulo"
+    row_label: "Módulo"
+    column_label: "Ambiente"
+  severity_by_module:
+    row: affected_module
+    column: severity
+    label: "Severidade por módulo"
+    row_label: "Módulo"
+    column_label: "Severidade"
+  team_by_root_cause:
+    row: root_cause_category
+    column: team
+    label: "Time por sinal RCA"
+    row_label: "Categoria RCA"
+    column_label: "Time"
+
+timelines:
+  created_by_day: created_at
+  occurrence_started_by_day: occurrence_started_at
+  detected_by_day: detected_at
+  resolved_by_day: resolved_at
+  service_restored_by_day: service_restored_at
+
+note_terms:
+  maximum_terms: 18
+  groups:
+    qa_dev: [qa_analysis_notes, dev_analysis_notes]
+    qa: [qa_analysis_notes]
+    dev: [dev_analysis_notes]
+  stopwords:
+    - a
+    - ao
+    - aos
+    - as
+    - com
+    - como
+    - da
+    - das
+    - de
+    - do
+    - dos
+    - e
+    - em
+    - na
+    - nas
+    - no
+    - nos
+    - o
+    - os
+    - ou
+    - para
+    - por
+    - que
+    - sem
+    - ser
+    - seu
+    - sua
+    - the
+    - uma
+    - um
+
+causal_signals:
+  unknown_value: unknown
+  interpretation_scope: candidate_systemic_patterns
+  sources:
+    qa:
+      field: qa_analysis_notes
+      source_type: qa_note
+      label: "QA"
+    dev:
+      field: dev_analysis_notes
+      source_type: dev_note
+      label: "Dev"
+  contextual_dimensions:
+    severity: "Severidade"
+    bug_type: "Bug type"
+    root_cause_category: "Sinal RCA"
+    affected_module: "Módulo"
+    environment: "Ambiente"
+    team: "Time"
+    version: "Versão"
+  corroborating_source_types:
+    - code
+    - log
+    - trace
+    - observability
+    - test
+    - documentation
+    - git
+    - pull_request
+
+root_cause_profiles:
+  maximum_top_modules: 3
+  maximum_sample_bug_ids: 4

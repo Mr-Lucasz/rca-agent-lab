@@ -1,0 +1,6 @@
+methodology:
+  version: 1
+
+warnings:
+  small_sample_below_records: 5
+  causal_signal_coverage_below_percent: 50

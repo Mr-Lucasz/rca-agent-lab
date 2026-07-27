@@ -1,0 +1,96 @@
+methodology:
+  version: 1
+  calibration_status: uncalibrated
+  inference_scope: candidate_generation_only
+  limitation: "Os agrupamentos são candidatos para revisão humana; não demonstram duplicidade nem mecanismo causal compartilhado."
+
+features:
+  maximum_distinctive_terms: 8
+  text_fields:
+    - title
+    - description
+    - actual_behavior
+  signature_fields:
+    module: affected_module
+    type: bug_type
+    team: team
+    version: version
+    environment: environment
+  same_signature:
+    required_equal_fields: [affected_module]
+    any_equal_fields: [bug_type, team]
+  stopwords:
+    - a
+    - ao
+    - as
+    - com
+    - da
+    - das
+    - de
+    - do
+    - dos
+    - e
+    - em
+    - na
+    - nas
+    - no
+    - nos
+    - o
+    - os
+    - para
+    - por
+    - que
+    - sem
+    - um
+    - uma
+    - the
+    - and
+    - for
+    - with
+    - when
+    - bug
+    - erro
+    - falha
+
+grouping:
+  duplicate_candidates:
+    similarity_threshold: 0.58
+    same_signature_minimum_similarity: 0.46
+    boundary_margin: 0.05
+    linkage: complete
+    minimum_family_size: 2
+  defect_clusters:
+    similarity_threshold: 0.36
+    same_signature_minimum_similarity: 0.24
+    boundary_margin: 0.05
+    linkage: complete
+
+priority:
+  score_weights:
+    record: 2
+    production: 2
+    reopened: 2
+  signals:
+    production:
+      field: environment
+      value: production
+    reopened:
+      field: reopened
+      value: "true"
+    severity:
+      field: severity
+      weights_config: severity.yml
+  maximum_prioritized_clusters: 3
+
+confidence:
+  value: unvalidated
+  basis: "Não há conjunto rotulado neste repositório para calibrar precisão, recall ou estabilidade dos clusters."
+
+labels:
+  security: "falhas de segurança"
+  integration: "falhas de integração"
+  data: "incidentes de dados"
+  functional: "falhas funcionais"
+  visual: "quebras visuais"
+  reliability: "falhas de confiabilidade"
+  unknown: "sinais mistos"

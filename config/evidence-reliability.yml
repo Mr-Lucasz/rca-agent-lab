@@ -1,0 +1,31 @@
+methodology:
+  version: 1
+  calibration_status: uncalibrated
+  rule: "Tipo de fonte sozinho não comprova confiabilidade; a classificação inicial deve permanecer não avaliada, salvo informação estrutural explícita."
+
+source_types:
+  dev_note:
+    default_reliability: unassessed
+    evidence_role: reported_causal_signal
+    epistemic_status: unverified
+    basis: "Análise causal reportada pelo time técnico. Sua força aumenta com recorrência entre bugs, convergência entre fontes e coerência com os demais indicadores; o conteúdo não é confirmado automaticamente."
+  qa_note:
+    default_reliability: unassessed
+    evidence_role: reported_causal_signal
+    epistemic_status: unverified
+    basis: "Observação ou análise causal reportada por QA. Sua força aumenta com recorrência entre bugs, convergência entre fontes e coerência com os demais indicadores; o conteúdo não é confirmado automaticamente."
+  actual_behavior:
+    default_reliability: unassessed
+    evidence_role: reported_statement
+    epistemic_status: unverified
+    basis: "Comportamento reportado; reprodução e observação direta não foram verificadas automaticamente."
+  description:
+    default_reliability: unassessed
+    evidence_role: reported_statement
+    epistemic_status: unverified
+    basis: "Descrição reportada; precisão e completude não foram verificadas automaticamente."
+  title:
+    default_reliability: low
+    evidence_role: reported_statement
+    epistemic_status: unverified
+    basis: "Resumo curto e potencialmente incompleto."
